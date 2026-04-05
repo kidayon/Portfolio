@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Kidus Yohannes | Web Developer/UI - Trader - Designer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"></script>
+  
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0a0f1c;
+      overflow-x: hidden;
+    }
+    .glow-text {
+      text-shadow: 0 0 12px rgba(0, 255, 234, 0.6);
+    }
+    .card-glow {
+      transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    }
+    .card-glow:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 30px 45px -15px rgba(0, 255, 234, 0.3);
+      border-color: #00ffea;
+    }
+    .skill-badge {
+      transition: all 0.3s ease;
+    }
+    .skill-badge:hover {
+      transform: translateY(-6px) scale(1.05);
+      background-color: #00ffea;
+      color: #0a0f1c;
+      box-shadow: 0 10px 25px -5px rgba(0, 255, 234, 0.5);
+    }
+    .nav-link {
+      position: relative;
+      transition: all 0.2s;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #00ffea;
+      transition: width 0.3s ease;
+      border-radius: 2px;
+    }
+    .nav-link:hover::after {
+      width: 100%;
+    }
+    .hero-bg {
+      background: linear-gradient(135deg, rgba(10, 15, 28, 0.65) 0%, rgba(10, 15, 28, 0.75) 100%), 
+                  url('forex.jpg') center/cover fixed no-repeat;
+    }
+    .profile-image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .profile-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+      transition: all 0.4s;
+    }
+    .profile-border {
+      box-shadow: 0 0 0 6px rgba(0, 255, 234, 0.5), 0 20px 35px -10px rgba(0,0,0,0.5);
+      transition: all 0.4s;
+    }
+    .profile-border:hover {
+      transform: scale(1.04);
+      box-shadow: 0 0 0 8px #00ffea, 0 25px 40px -12px #00ffea80;
+    }
+    .btn-primary {
+      transition: all 0.25s ease;
+    }
+    .btn-primary:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px -8px #00ffea99;
+      background-color: #00d4c8;
+    }
+    .section-fade {
+      animation: fadeUp 0.7s ease-out;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .contact-link-card {
+      transition: all 0.3s ease;
+      display: block;
+    }
+    .contact-link-card:hover i {
+      transform: scale(1.05);
+    }
+    .rounded-full {
+      border-radius: 9999px;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body class="bg-[#0a0f1c] text-gray-200">
+
+<div id="root"></div>
+
+<script type="text/babel">
+  const { useState, useEffect } = React;
+  
+  const Navbar = () => {
+    const scrollToSection = (id) => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    };
+
+    return (
+      <nav className="fixed top-0 left-0 w-full z-50 bg-[#0a0f1c]/80 backdrop-blur-xl border-b border-[#00ffea]/20 shadow-lg transition-all duration-300">
+        <div className="max-w-7xl mx-auto px-6 py-3 flex flex-wrap items-center justify-between">
+          <div className="text-2xl font-bold tracking-tight">
+            <span className="text-[#00ffea]">K</span>idus
+          </div>
+          <div className="flex flex-wrap gap-5 md:gap-7 text-sm md:text-base font-medium">
+            {['Home', 'About', 'Projects', 'Skills', 'Contact'].map((item) => {
+              const sectionId = item.toLowerCase();
+              return (
+                <button
+                  key={item}
+                  onClick={() => scrollToSection(sectionId)}
+                  className="nav-link text-gray-200 hover:text-[#00ffea] transition px-1 py-1"
+                >
+                  {item}
+                </button>
+              );
+            })}
+          </div>
+          <div className="hidden md:block">
+            <a href="https://github.com/kidayon/EST-Shuttle" target="_blank" rel="noopener noreferrer" className="text-sm border border-[#00ffea]/40 px-4 py-1.5 rounded-full hover:bg-[#00ffea]/10 hover:border-[#00ffea] transition">
+              <i className="fab fa-github mr-1"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </nav>
+    );
+  };
+
+  const Hero = () => {
+    return (
+      <section id="home" className="min-h-screen flex items-center justify-center relative hero-bg pt-24 pb-16">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <div className="mb-6 flex justify-center">
+            <div className="w-44 h-44 md:w-52 md:h-52 rounded-full border-4 border-[#00ffea] profile-border overflow-hidden bg-[#0f172a]">
+              <img 
+                src="portfolio.jpg"
+                alt="Kidus Yohannes - full face portrait" 
+                className="profile-img w-full h-full"
+                onError={(e) => { e.target.src = 'https://placehold.co/400x400/1e293b/00ffea?text=Kidus'; e.target.style.objectPosition = '50% 50%'; }}
+              />
+            </div>
+          </div>
+          <h1 className="font-['Playfair_Display'] text-5xl md:text-7xl font-extrabold tracking-tight bg-gradient-to-r from-white via-[#b0f3ff] to-[#00ffea] bg-clip-text text-transparent drop-shadow-lg">
+           I'm Kidus 
+          </h1>
+          <p className="text-xl md:text-2xl font-semibold text-[#00ffea] mt-4 glow-text">
+            Web Developer/UI - Forex Trader - Graphics Designer
+          </p>
+          <p className="text-gray-300 text-lg mt-2 flex items-center justify-center gap-2">
+            <i className="fas fa-map-marker-alt text-[#00ffea]"></i> Addis Ababa, Ethiopia
+          </p>
+          <div className="flex flex-wrap justify-center gap-5 mt-10">
+            <button onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })} className="btn-primary bg-[#00ffea] text-[#0a0f1c] font-bold px-8 py-3 rounded-full shadow-xl hover:shadow-[#00ffea]/40 transition">
+              Explore My Work
+            </button>
+            <a href="https://github.com/kidayon/EST-Shuttle" target="_blank" className="bg-[#1e293b] border border-[#00ffea]/40 text-[#00ffea] font-bold px-8 py-3 rounded-full hover:bg-[#00ffea]/10 hover:border-[#00ffea] transition shadow-md">
+              <i className="fab fa-github mr-2"></i> GitHub Repository
+            </a>
+          </div>
+        </div>
+      </section>
+    );
+  };
+
+  const About = () => {
+    return (
+      <section id="about" className="py-24 px-6 bg-[#0f172a]/40">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-[#bae6fd] mb-12">About Me</h2>
+          <div className="space-y-6 text-gray-300 text-lg max-w-3xl mx-auto">
+            <p>I am an Addis Ababa-born creative and analytical individual who creates cutting-edge responsive websites and trades forex. </p>
+            <p>Forex trading has taught me discipline and risk management through my experiences of data driven decision skills that bring into every project i develop .</p>
+            <p>I am also a visual artist, a practice that enhances my patience and ability to analyze designs.</p>
+          </div>
+        </div>
+      </section>
+    );
+  };
+
+  const Skills = () => {
+    const skillList = [
+      "Web Development (HTML5, CSS3, JavaScript)", "Responsive Design & UI/UX", "Forex Market Analysis",
+      "Risk Management", "Technical & Fundamental Analysis", "Drawing & Digital Art",
+      "Visual Design & Composition", "Analytical Thinking & Discipline"
+    ];
+    return (
+      <section id="skills" className="py-24 px-6 bg-[#0a0f1c]">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-center text-[#bae6fd] mb-12">Technical skills</h2>
+          <div className="flex flex-wrap justify-center gap-4">
+            {skillList.map((skill, idx) => (
+              <span key={idx} className="skill-badge bg-[#00ffea]/10 border border-[#00ffea]/40 text-[#67e8f9] px-6 py-2.5 rounded-full font-semibold text-md backdrop-blur-sm cursor-default transition-all duration-300">
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+    );
+  };
+
+  const Projects = () => {
+    return (
+      <section id="projects" className="py-24 px-6 bg-[#0f172a]/60">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-center text-[#bae6fd] mb-12">Featured Project</h2>
+          <div className="max-w-3xl mx-auto bg-[#0f172a]/80 backdrop-blur-md border border-[#00ffea]/20 rounded-3xl p-8 md:p-10 card-glow transition-all duration-500">
+            <h3 className="text-2xl md:text-3xl font-bold text-[#67e8f9] mb-4">EST Shuttle, Airport & Cruise Transfer Platform</h3>
+            <p className="text-gray-300 text-lg mb-4">A clean, fully responsive web platform designed to simplify airport and cruise port transfers. The frontend is live, and I'm currently implementing booking logic, real-time tracking, and payment features.</p>
+            <p className="text-[#94a3b8] mb-6"><strong className="text-[#00ffea]">Tech Stack:</strong> HTML5, CSS3, JavaScript (ES6) - Hosted on Vercel</p>
+            <div className="flex flex-wrap gap-4">
+              <a href="https://e-shuttle.vercel.app/index.html" target="_blank" className="btn-primary bg-[#00ffea] text-[#0a0f1c] font-bold px-6 py-2.5 rounded-full shadow-md hover:shadow-[#00ffea]/40 transition inline-flex items-center gap-2">
+                <i className="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="https://github.com/kidayon/EST-Shuttle" target="_blank" className="bg-transparent border border-[#00ffea]/50 text-[#00ffea] font-bold px-6 py-2.5 rounded-full hover:bg-[#00ffea]/10 transition inline-flex items-center gap-2">
+                <i className="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  };
+
+  const ForexSection = () => {
+    return (
+      <section className="py-24 px-6 bg-[#0a0f1c]">
+        <div className="max-w-5xl mx-auto">
+          <div className="bg-[#0f172a]/70 backdrop-blur-sm border border-[#00ffea]/20 rounded-3xl p-8 md:p-10 card-glow transition-all duration-500 text-center">
+            <i className="fas fa-chart-line text-5xl text-[#00ffea] mb-5"></i>
+            <h3 className="text-3xl font-bold text-[#67e8f9] mb-4">Forex Trading</h3>
+            <p className="text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto">
+              I approach Forex trading with patience and precision. Understanding market structures, reading price actions, managing risk, 
+              and making calm decisions under pressure are daily practices that strengthen both my trading performance and my development skills.
+            </p>
+            <p className="text-[#bae6fd] font-semibold mt-5 text-xl"> This analytical foundation drives my passion for Data Science.</p>
+          </div>
+        </div>
+      </section>
+    );
+  };
+
+  const ArtSection = () => {
+    return (
+      <section className="py-24 px-6 bg-[#0f172a]/40">
+        <div className="max-w-5xl mx-auto">
+          <div className="bg-[#0a0f1c]/70 backdrop-blur-sm border border-[#00ffea]/20 rounded-3xl p-8 md:p-10 card-glow transition-all duration-500 text-center">
+            <i className="fas fa-paint-brush text-5xl text-[#00ffea] mb-5"></i>
+            <h3 className="text-3xl font-bold text-[#67e8f9] mb-4">Art & Design</h3>
+            <p className="text-gray-300 text-lg leading-relaxed">
+              Drawing and painting are essential parts of who I am. It helps me to stay creative and improve my sense of aesthetics  
+              and develop my ideas with colors and composition. These artistic skills directly enhance my web design works 
+              helping me craft visually appealing and user friendly interfaces.
+            </p>
+          </div>
+        </div>
+      </section>
+    );
+  };
+
+  const Contact = () => {
+    return (
+      <section id="contact" className="py-24 px-6 bg-[#0a0f1c]">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-center text-[#bae6fd] mb-8">Get in touch</h2>
+          <p className="text-center text-gray-400 text-lg max-w-2xl mx-auto mb-14">
+            Feel free to reach out for collaborations, trading insights, or creative projects I'd love to connect!
+          </p>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            
+            <a href="mailto:kxdawrld24@gmail.com" className="bg-[#0f172a]/70 border border-[#00ffea]/20 rounded-2xl p-6 text-center card-glow transition-all contact-link-card hover:border-[#00ffea] group">
+              <i className="fas fa-envelope text-4xl text-[#00ffea] mb-3 group-hover:scale-105 transition-transform"></i>
+              <p className="font-medium text-gray-200 break-all">kxdawrld24@gmail.com</p>
+              <p className="text-xs text-[#00ffea]/70 mt-2">Send an email</p>
+            </a>
+          
+            <a href="tel:+251984065814" className="bg-[#0f172a]/70 border border-[#00ffea]/20 rounded-2xl p-6 text-center card-glow transition-all contact-link-card hover:border-[#00ffea] group">
+              <i className="fas fa-phone-alt text-4xl text-[#00ffea] mb-3 group-hover:scale-105 transition-transform"></i>
+              <p className="font-medium text-gray-200">+251 984 065 814</p>
+              <p className="text-xs text-[#00ffea]/70 mt-2">Call or message</p>
+            </a>
+            
+            
+            <div className="bg-[#0f172a]/70 border border-[#00ffea]/20 rounded-2xl p-6 text-center card-glow transition-all">
+              <i className="fas fa-map-marker-alt text-4xl text-[#00ffea] mb-3"></i>
+              <p className="font-medium text-gray-200">Addis Ababa, Ethiopia</p>
+              <p className="text-xs text-gray-400 mt-2">Based in , Addis</p>
+            </div>
+            
+            
+            <a href="https://www.instagram.com/leonk8da?igsh=MXdtbzZna25kdmp4eQ==" target="_blank" rel="noopener noreferrer" className="bg-[#0f172a]/70 border border-[#00ffea]/20 rounded-2xl p-6 text-center card-glow transition-all hover:border-[#00ffea] hover:bg-[#00ffea]/10 group">
+              <i className="fab fa-instagram text-4xl text-[#00ffea] mb-3 group-hover:scale-110 transition-transform"></i>
+              <p className="font-semibold text-gray-200">@leonk8da</p>
+              <p className="text-xs text-gray-400 mt-1">Follow on Instagram</p>
+            </a>
+            
+            
+            <a href="https://www.facebook.com/share/1E782ZbLQC/" target="_blank" rel="noopener noreferrer" className="bg-[#0f172a]/70 border border-[#00ffea]/20 rounded-2xl p-6 text-center card-glow transition-all hover:border-[#00ffea] hover:bg-[#00ffea]/10 group">
+              <i className="fab fa-facebook text-4xl text-[#00ffea] mb-3 group-hover:scale-110 transition-transform"></i>
+              <p className="font-semibold text-gray-200">Kidus Yohannes</p>
+              <p className="text-xs text-[#00ffea]/80 mt-1">Connect on Facebook</p>
+            </a>
+            
+            
+            <a href="https://wa.me/251984065814?text=Hello%20Kidus%2C%20I%20saw%20your%20portfolio!" target="_blank" rel="noopener noreferrer" className="bg-[#0f172a]/70 border border-[#00ffea]/20 rounded-2xl p-6 text-center card-glow transition-all hover:border-[#00ffea] hover:bg-[#00ffea]/10 group">
+              <i className="fab fa-whatsapp text-4xl text-[#00ffea] mb-3 group-hover:scale-110 transition-transform"></i>
+              <p className="font-semibold text-gray-200">WhatsApp</p>
+              <p className="text-sm text-gray-300">+251 984 065 814</p>
+              <p className="text-xs text-[#00ffea]/70 mt-1">Tap to chat </p>
+            </a>
+          </div>
+          
+          
+          <div className="text-center mt-12 text-gray-500 text-sm border-t border-[#00ffea]/10 pt-8">
+            <i className="fas fa-comment-dots text-[#00ffea]/60 mr-2"></i> Available for freelance, collaboration & trading discussions
+          </div>
+        </div>
+      </section>
+    );
+  };
+
+  const Footer = () => {
+    return (
+      <footer className="py-10 border-t border-[#00ffea]/10 text-center text-gray-500">
+        <p> &copy; Kidus Yohannes - Addis Ababa, Ethiopia | Portfolio </p>
+        <div className="flex justify-center gap-6 mt-4 text-xl">
+          <a href="https://github.com/kidayon/EST-Shuttle" target="_blank" rel="noopener noreferrer" className="hover:text-[#00ffea] transition"><i className="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/leonk8da?igsh=MXdtbzZna25kdmp4eQ==" target="_blank" rel="noopener noreferrer" className="hover:text-[#00ffea] transition"><i className="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/1E782ZbLQC/" target="_blank" rel="noopener noreferrer" className="hover:text-[#00ffea] transition"><i className="fab fa-facebook"></i></a>
+          <a href="https://wa.me/251984065814" target="_blank" rel="noopener noreferrer" className="hover:text-[#00ffea] transition"><i className="fab fa-whatsapp"></i></a>
+        </div>
+      </footer>
+    );
+  };
+
+  const App = () => {
+    const [scrolled, setScrolled] = useState(false);
+    useEffect(() => {
+      const handleScroll = () => {
+        setScrolled(window.scrollY > 20);
+      };
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+    
+    useEffect(() => {
+      const navbar = document.querySelector('nav');
+      if (navbar) {
+        if (scrolled) {
+          navbar.classList.add('bg-[#0a0f1c]/95', 'shadow-2xl');
+          navbar.classList.remove('bg-[#0a0f1c]/80');
+        } else {
+          navbar.classList.add('bg-[#0a0f1c]/80');
+          navbar.classList.remove('bg-[#0a0f1c]/95');
+        }
+      }
+    }, [scrolled]);
+
+    return (
+      <div className="overflow-x-hidden">
+        <Navbar />
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <ForexSection />
+        <ArtSection />
+        <Contact />
+        <Footer />
+      </div>
+    );
+  };
+
+  ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>
