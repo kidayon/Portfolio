@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)file:///C:/Users/hp/Downloads/loki/kidus_portfolio.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Kidus Yohannes Portfolio</title>
+  <script src="./Kidus Yohannes Portfolio_files/saved_resource"></script>
+  <link href="./Kidus Yohannes Portfolio_files/css2" rel="stylesheet">
+  <link rel="stylesheet" href="./Kidus Yohannes Portfolio_files/all.min.css">
+  <script src="./Kidus Yohannes Portfolio_files/react.development.js.download"></script>
+  <script src="./Kidus Yohannes Portfolio_files/react-dom.development.js.download"></script>
+  <script src="./Kidus Yohannes Portfolio_files/babel.min.js.download"></script>
+  
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0a0f1c;
+      overflow-x: hidden;
+    }
+    .glow-text {
+      text-shadow: 0 0 12px rgba(0, 255, 234, 0.6);
+    }
+    .card-glow {
+      transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    }
+    .card-glow:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 30px 45px -15px rgba(0, 255, 234, 0.3);
+      border-color: #00ffea;
+    }
+    .skill-badge {
+      transition: all 0.3s ease;
+    }
+    .skill-badge:hover {
+      transform: translateY(-6px) scale(1.05);
+      background-color: #00ffea;
+      color: #0a0f1c;
+      box-shadow: 0 10px 25px -5px rgba(0, 255, 234, 0.5);
+    }
+    .nav-link {
+      position: relative;
+      transition: all 0.2s;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #00ffea;
+      transition: width 0.3s ease;
+      border-radius: 2px;
+    }
+    .nav-link:hover::after {
+      width: 100%;
+    }
+    .hero-bg {
+      background: linear-gradient(135deg, rgba(10,15,28,0.88) 0%, rgba(10,15,28,0.94) 100%), 
+                  url('forex.jpg') center/cover fixed no-repeat;
+    }
+    .profile-border {
+      box-shadow: 0 0 0 6px rgba(0, 255, 234, 0.5), 0 20px 35px -10px rgba(0,0,0,0.5);
+      transition: all 0.4s;
+    }
+    .profile-border:hover {
+      transform: scale(1.04);
+      box-shadow: 0 0 0 8px #00ffea, 0 25px 40px -12px #00ffea80;
+    }
+    .btn-primary {
+      transition: all 0.25s ease;
+    }
+    .btn-primary:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px -8px #00ffea99;
+      background-color: #00d4c8;
+    }
+    .section-fade {
+      animation: fadeUp 0.7s ease-out;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .contact-link-card {
+      transition: all 0.3s ease;
+      display: block;
+    }
+    .contact-link-card:hover i {
+      transform: scale(1.05);
+    }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.relative{position:relative}.left-0{left:0px}.top-0{top:0px}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-12{margin-bottom:3rem}.mb-14{margin-bottom:3.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mr-1{margin-right:0.25rem}.mr-2{margin-right:0.5rem}.mt-1{margin-top:0.25rem}.mt-10{margin-top:2.5rem}.mt-12{margin-top:3rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-44{height:11rem}.min-h-screen{min-height:100vh}.w-44{width:11rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-5xl{max-width:64rem}.max-w-6xl{max-width:72rem}.max-w-7xl{max-width:80rem}.cursor-default{cursor:default}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-2{gap:0.5rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.overflow-x-hidden{overflow-x:hidden}.break-all{word-break:break-all}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.border{border-width:1px}.border-4{border-width:4px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-\[\#00ffea\]{--tw-border-opacity:1;border-color:rgb(0 255 234 / var(--tw-border-opacity, 1))}.border-\[\#00ffea\]\/10{border-color:rgb(0 255 234 / 0.1)}.border-\[\#00ffea\]\/20{border-color:rgb(0 255 234 / 0.2)}.border-\[\#00ffea\]\/40{border-color:rgb(0 255 234 / 0.4)}.border-\[\#00ffea\]\/50{border-color:rgb(0 255 234 / 0.5)}.bg-\[\#0a0f1c\]{--tw-bg-opacity:1;background-color:rgb(10 15 28 / var(--tw-bg-opacity, 1))}.bg-\[\#00ffea\]{--tw-bg-opacity:1;background-color:rgb(0 255 234 / var(--tw-bg-opacity, 1))}.bg-\[\#00ffea\]\/10{background-color:rgb(0 255 234 / 0.1)}.bg-\[\#0a0f1c\]\/70{background-color:rgb(10 15 28 / 0.7)}.bg-\[\#0a0f1c\]\/80{background-color:rgb(10 15 28 / 0.8)}.bg-\[\#0f172a\]\/40{background-color:rgb(15 23 42 / 0.4)}.bg-\[\#0f172a\]\/60{background-color:rgb(15 23 42 / 0.6)}.bg-\[\#0f172a\]\/70{background-color:rgb(15 23 42 / 0.7)}.bg-\[\#0f172a\]\/80{background-color:rgb(15 23 42 / 0.8)}.bg-\[\#1e293b\]{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-transparent{background-color:transparent}.bg-\[\#0a0f1c\]\/95{background-color:rgb(10 15 28 / 0.95)}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-white{--tw-gradient-from:#fff var(--tw-gradient-from-position);--tw-gradient-to:rgb(255 255 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-\[\#b0f3ff\]{--tw-gradient-to:rgb(176 243 255 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #b0f3ff var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-\[\#00ffea\]{--tw-gradient-to:#00ffea var(--tw-gradient-to-position)}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.object-cover{object-fit:cover}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-1{padding-left:0.25rem;padding-right:0.25rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-24{padding-top:6rem;padding-bottom:6rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.pb-16{padding-bottom:4rem}.pt-24{padding-top:6rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.font-\[\'Playfair_Display\'\]{font-family:'Playfair Display'}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-relaxed{line-height:1.625}.tracking-tight{letter-spacing:-0.025em}.text-gray-200{--tw-text-opacity:1;color:rgb(229 231 235 / var(--tw-text-opacity, 1))}.text-\[\#00ffea\]{--tw-text-opacity:1;color:rgb(0 255 234 / var(--tw-text-opacity, 1))}.text-\[\#00ffea\]\/60{color:rgb(0 255 234 / 0.6)}.text-\[\#00ffea\]\/70{color:rgb(0 255 234 / 0.7)}.text-\[\#00ffea\]\/80{color:rgb(0 255 234 / 0.8)}.text-\[\#0a0f1c\]{--tw-text-opacity:1;color:rgb(10 15 28 / var(--tw-text-opacity, 1))}.text-\[\#67e8f9\]{--tw-text-opacity:1;color:rgb(103 232 249 / var(--tw-text-opacity, 1))}.text-\[\#94a3b8\]{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-\[\#bae6fd\]{--tw-text-opacity:1;color:rgb(186 230 253 / var(--tw-text-opacity, 1))}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-transparent{color:transparent}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.drop-shadow-lg{--tw-drop-shadow:drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-xl{--tw-backdrop-blur:blur(24px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.duration-500{transition-duration:500ms}.hover\:border-\[\#00ffea\]:hover{--tw-border-opacity:1;border-color:rgb(0 255 234 / var(--tw-border-opacity, 1))}.hover\:bg-\[\#00ffea\]\/10:hover{background-color:rgb(0 255 234 / 0.1)}.hover\:text-\[\#00ffea\]:hover{--tw-text-opacity:1;color:rgb(0 255 234 / var(--tw-text-opacity, 1))}.hover\:shadow-\[\#00ffea\]\/40:hover{--tw-shadow-color:rgb(0 255 234 / 0.4);--tw-shadow:var(--tw-shadow-colored)}.group:hover .group-hover\:scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (min-width: 640px){.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}@media (min-width: 768px){.md\:block{display:block}.md\:h-52{height:13rem}.md\:w-52{width:13rem}.md\:gap-7{gap:1.75rem}.md\:p-10{padding:2.5rem}.md\:text-2xl{font-size:1.5rem;line-height:2rem}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}.md\:text-5xl{font-size:3rem;line-height:1}.md\:text-7xl{font-size:4.5rem;line-height:1}.md\:text-base{font-size:1rem;line-height:1.5rem}}@media (min-width: 1024px){.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}@media (min-width: 1280px){.xl\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}}</style><script>"use strict";
+
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+var _React = React,
+  useState = _React.useState,
+  useEffect = _React.useEffect;
+var Navbar = function Navbar() {
+  var scrollToSection = function scrollToSection(id) {
+    var element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+  return /*#__PURE__*/React.createElement("nav", {
+    className: "fixed top-0 left-0 w-full z-50 bg-[#0a0f1c]/80 backdrop-blur-xl border-b border-[#00ffea]/20 shadow-lg transition-all duration-300"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "max-w-7xl mx-auto px-6 py-3 flex flex-wrap items-center justify-between"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "text-2xl font-bold tracking-tight"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "text-[#00ffea]"
+  }, "K"), "idus"), /*#__PURE__*/React.createElement("div", {
+    className: "flex flex-wrap gap-5 md:gap-7 text-sm md:text-base font-medium"
+  }, ['Home', 'About', 'Projects', 'Skills', 'Contact'].map(function (item) {
+    var sectionId = item.toLowerCase();
+    return /*#__PURE__*/React.createElement("button", {
+      key: item,
+      onClick: function onClick() {
+        return scrollToSection(sectionId);
+      },
+      className: "nav-link text-gray-200 hover:text-[#00ffea] transition px-1 py-1"
+    }, item);
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "hidden md:block"
+  }, /*#__PURE__*/React.createElement("a", {
+    href: "https://github.com/kidayon/EST-Shuttle",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "text-sm border border-[#00ffea]/40 px-4 py-1.5 rounded-full hover:bg-[#00ffea]/10 hover:border-[#00ffea] transition"
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "fab fa-github mr-1"
+  }), " GitHub"))));
+};
+var Hero = function Hero() {
+  return /*#__PURE__*/React.createElement("section", {
+    id: "home",
+    className: "min-h-screen flex items-center justify-center relative hero-bg pt-24 pb-16"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "max-w-5xl mx-auto px-6 text-center"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "mb-6 flex justify-center"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "kiduss.jpg",
+    alt: "Kidus Yohannes - Web Developer and Forex Trader",
+    className: "w-44 h-44 md:w-52 md:h-52 rounded-full object-cover border-4 border-[#00ffea] profile-border",
+    onError: function onError(e) {
+      e.target.src = 'https://placehold.co/400x400/1e293b/00ffea?text=Kidus';
+    }
+  })), /*#__PURE__*/React.createElement("h1", {
+    className: "font-['Playfair_Display'] text-5xl md:text-7xl font-extrabold tracking-tight bg-gradient-to-r from-white via-[#b0f3ff] to-[#00ffea] bg-clip-text text-transparent drop-shadow-lg"
+  }, "I'm Kidus"), /*#__PURE__*/React.createElement("p", {
+    className: "text-xl md:text-2xl font-semibold text-[#00ffea] mt-4 glow-text"
+  }, "Web Developer/UI - Forex Trader - Designer"), /*#__PURE__*/React.createElement("p", {
+    className: "text-gray-300 text-lg mt-2 flex items-center justify-center gap-2"
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "fas fa-map-marker-alt text-[#00ffea]"
+  }), " Addis Ababa, Ethiopia"), /*#__PURE__*/React.createElement("div", {
+    className: "flex flex-wrap justify-center gap-5 mt-10"
+  }, /*#__PURE__*/React.createElement("button", {
+    onClick: function onClick() {
+      return document.getElementById('projects').scrollIntoView({
+        behavior: 'smooth'
+      });
+    },
+    className: "btn-primary bg-[#00ffea] text-[#0a0f1c] font-bold px-8 py-3 rounded-full shadow-xl hover:shadow-[#00ffea]/40 transition"
+  }, "Explore My Work"), /*#__PURE__*/React.createElement("a", {
+    href: "https://github.com/kidayon/EST-Shuttle",
+    target: "_blank",
+    className: "bg-[#1e293b] border border-[#00ffea]/40 text-[#00ffea] font-bold px-8 py-3 rounded-full hover:bg-[#00ffea]/10 hover:border-[#00ffea] transition shadow-md"
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "fab fa-github mr-2"
+  }), " GitHub Repository"))));
+};
+var About = function About() {
+  return /*#__PURE__*/React.createElement("section", {
+    id: "about",
+    className: "py-24 px-6 bg-[#0f172a]/40"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "max-w-5xl mx-auto text-center"
+  }, /*#__PURE__*/React.createElement("h2", {
+    className: "font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-[#bae6fd] mb-12"
+  }, "About Me"), /*#__PURE__*/React.createElement("div", {
+    className: "space-y-6 text-gray-300 text-lg max-w-3xl mx-auto"
+  }, /*#__PURE__*/React.createElement("p", null, "I'm a creative and analytical mind from Addis Ababa. My journey into technology began with a fascination for how things work behind the screen though I build a modern responsive websites while deeply engaging with the financial markets as a forex trader."), /*#__PURE__*/React.createElement("p", null, "Trading has taught me discipline and risk management through my experiences of data driven decision skills that bring into every project i develop."), /*#__PURE__*/React.createElement("p", null, "On the creative side I express myself through drawing and painting. Art helps me stay patient and creative for designing compositions and visual harmony with qualities that directly improve my work as a web developer and designer."))));
+};
+var Skills = function Skills() {
+  var skillList = ["Web Development (HTML5, CSS3, JavaScript)", "Responsive Design & UI/UX", "Forex Market Analysis", "Risk Management", "Technical & Fundamental Analysis", "Drawing & Digital Art", "Visual Design & Composition", "Analytical Thinking & Discipline"];
+  return /*#__PURE__*/React.createElement("section", {
+    id: "skills",
+    className: "py-24 px-6 bg-[#0a0f1c]"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "max-w-6xl mx-auto"
+  }, /*#__PURE__*/React.createElement("h2", {
+    className: "font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-center text-[#bae6fd] mb-12"
+  }, " Technical skills"), /*#__PURE__*/React.createElement("div", {
+    className: "flex flex-wrap justify-center gap-4"
+  }, skillList.map(function (skill, idx) {
+    return /*#__PURE__*/React.createElement("span", {
+      key: idx,
+      className: "skill-badge bg-[#00ffea]/10 border border-[#00ffea]/40 text-[#67e8f9] px-6 py-2.5 rounded-full font-semibold text-md backdrop-blur-sm cursor-default transition-all duration-300"
+    }, skill);
+  }))));
+};
+var Projects = function Projects() {
+  return /*#__PURE__*/React.createElement("section", {
+    id: "projects",
+    className: "py-24 px-6 bg-[#0f172a]/60"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "max-w-6xl mx-auto"
+  }, /*#__PURE__*/React.createElement("h2", {
+    className: "font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-center text-[#bae6fd] mb-12"
+  }, "Featured Project"), /*#__PURE__*/React.createElement("div", {
+    className: "max-w-3xl mx-auto bg-[#0f172a]/80 backdrop-blur-md border border-[#00ffea]/20 rounded-3xl p-8 md:p-10 card-glow transition-all duration-500"
+  }, /*#__PURE__*/React.createElement("h3", {
+    className: "text-2xl md:text-3xl font-bold text-[#67e8f9] mb-4"
+  }, "EST Shuttle, Airport & Cruise Transfer Platform"), /*#__PURE__*/React.createElement("p", {
+    className: "text-gray-300 text-lg mb-4"
+  }, "It's fully responsive web platform designed to simplify airport and cruise port transfers. The frontend is live and I'm currently implementing booking logics real time data tracking and payment features."), /*#__PURE__*/React.createElement("p", {
+    className: "text-[#94a3b8] mb-6"
+  }, /*#__PURE__*/React.createElement("strong", {
+    className: "text-[#00ffea]"
+  }, "Tech Stack:"), " HTML5, CSS3, JavaScript (ES6) - Hosted on Vercel"), /*#__PURE__*/React.createElement("div", {
+    className: "flex flex-wrap gap-4"
+  }, /*#__PURE__*/React.createElement("a", {
+    href: "https://e-shuttle.vercel.app/index.html",
+    target: "_blank",
+    className: "btn-primary bg-[#00ffea] text-[#0a0f1c] font-bold px-6 py-2.5 rounded-full shadow-md hover:shadow-[#00ffea]/40 transition inline-flex items-center gap-2"
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "fas fa-external-link-alt"
+  }), " Live Demo"), /*#__PURE__*/React.createElement("a", {
+    href: "https://github.com/kidayon/EST-Shuttle",
+    target: "_blank",
+    className: "bg-transparent border border-[#00ffea]/50 text-[#00ffea] font-bold px-6 py-2.5 rounded-full hover:bg-[#00ffea]/10 transition inline-flex items-center gap-2"
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "fab fa-github"
+  }), " GitHub")))));
+};
+var ForexSection = function ForexSection() {
+  return /*#__PURE__*/React.createElement("section", {
+    className: "py-24 px-6 bg-[#0a0f1c]"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "max-w-5xl mx-auto"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "bg-[#0f172a]/70 backdrop-blur-sm border border-[#00ffea]/20 rounded-3xl p-8 md:p-10 card-glow transition-all duration-500 text-center"
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "fas fa-chart-line text-5xl text-[#00ffea] mb-5"
+  }), /*#__PURE__*/React.createElement("h3", {
+    className: "text-3xl font-bold text-[#67e8f9] mb-4"
+  }, "Forex Trading"), /*#__PURE__*/React.createElement("p", {
+    className: "text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto"
+  }, "I approach Forex trading with patience and precision. Understanding market structures, reading price actions,risk management and try not to let emotions take over It's not always easy but it teaches me discipline and that helps me as a developer too."), /*#__PURE__*/React.createElement("p", {
+    className: "text-[#bae6fd] font-semibold mt-5 text-xl"
+  }, " This analytical foundation drives my passion for Data Science."))));
+};
+var ArtSection = function ArtSection() {
+  return /*#__PURE__*/React.createElement("section", {
+    className: "py-24 px-6 bg-[#0f172a]/40"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "max-w-5xl mx-auto"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "bg-[#0a0f1c]/70 backdrop-blur-sm border border-[#00ffea]/20 rounded-3xl p-8 md:p-10 card-glow transition-all duration-500 text-center"
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "fas fa-paint-brush text-5xl text-[#00ffea] mb-5"
+  }), /*#__PURE__*/React.createElement("h3", {
+    className: "text-3xl font-bold text-[#67e8f9] mb-4"
+  }, "Art & Design"), /*#__PURE__*/React.createElement("p", {
+    className: "text-gray-300 text-lg leading-relaxed"
+  }, "Drawing and painting are essential parts of who I am. It helps me to stay creative and improve my sense of aesthetics and develop my ideas with colors and composition. These artistic skills directly enhance my web design work is helping me to craft visually appealing and user friendly interfaces."))));
+};
+var Contact = function Contact() {
+  return /*#__PURE__*/React.createElement("section", {
+    id: "contact",
+    className: "py-24 px-6 bg-[#0a0f1c]"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "max-w-6xl mx-auto"
+  }, /*#__PURE__*/React.createElement("h2", {
+    className: "font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-center text-[#bae6fd] mb-8"
+  }, "Get in touch"), /*#__PURE__*/React.createElement("p", {
+    className: "text-center text-gray-400 text-lg max-w-2xl mx-auto mb-14"
+  }, "Feel free to reach out for collaborations or trading insights and creative projects I'd love to connect!"), /*#__PURE__*/React.createElement("div", {
+    className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+  }, /*#__PURE__*/React.createElement("a", {
+    href: "mailto:kxdawrld24@gmail.com",
+    className: "bg-[#0f172a]/70 border border-[#00ffea]/20 rounded-2xl p-6 text-center card-glow transition-all contact-link-card hover:border-[#00ffea] group"
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "fas fa-envelope text-4xl text-[#00ffea] mb-3 group-hover:scale-105 transition-transform"
+  }), /*#__PURE__*/React.createElement("p", {
+    className: "font-medium text-gray-200 break-all"
+  }, "kxdawrld24@gmail.com"), /*#__PURE__*/React.createElement("p", {
+    className: "text-xs text-[#00ffea]/70 mt-2"
+  }, "Send an email")), /*#__PURE__*/React.createElement("a", {
+    href: "tel:+251984065814",
+    className: "bg-[#0f172a]/70 border border-[#00ffea]/20 rounded-2xl p-6 text-center card-glow transition-all contact-link-card hover:border-[#00ffea] group"
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "fas fa-phone-alt text-4xl text-[#00ffea] mb-3 group-hover:scale-105 transition-transform"
+  }), /*#__PURE__*/React.createElement("p", {
+    className: "font-medium text-gray-200"
+  }, "+251 984 065 814"), /*#__PURE__*/React.createElement("p", {
+    className: "text-xs text-[#00ffea]/70 mt-2"
+  }, "Call or message")), /*#__PURE__*/React.createElement("div", {
+    className: "bg-[#0f172a]/70 border border-[#00ffea]/20 rounded-2xl p-6 text-center card-glow transition-all"
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "fas fa-map-marker-alt text-4xl text-[#00ffea] mb-3"
+  }), /*#__PURE__*/React.createElement("p", {
+    className: "font-medium text-gray-200"
+  }, "Addis Ababa, Ethiopia"), /*#__PURE__*/React.createElement("p", {
+    className: "text-xs text-gray-400 mt-2"
+  }, "Based in Addis")), /*#__PURE__*/React.createElement("a", {
+    href: "https://www.instagram.com/leonk8da?igsh=MXdtbzZna25kdmp4eQ==",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bg-[#0f172a]/70 border border-[#00ffea]/20 rounded-2xl p-6 text-center card-glow transition-all hover:border-[#00ffea] hover:bg-[#00ffea]/10 group"
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "fab fa-instagram text-4xl text-[#00ffea] mb-3 group-hover:scale-110 transition-transform"
+  }), /*#__PURE__*/React.createElement("p", {
+    className: "font-semibold text-gray-200"
+  }, "@leonk8da"), /*#__PURE__*/React.createElement("p", {
+    className: "text-xs text-gray-400 mt-1"
+  }, "Follow on Instagram")), /*#__PURE__*/React.createElement("a", {
+    href: "https://www.facebook.com/share/1E782ZbLQC/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bg-[#0f172a]/70 border border-[#00ffea]/20 rounded-2xl p-6 text-center card-glow transition-all hover:border-[#00ffea] hover:bg-[#00ffea]/10 group"
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "fab fa-facebook text-4xl text-[#00ffea] mb-3 group-hover:scale-110 transition-transform"
+  }), /*#__PURE__*/React.createElement("p", {
+    className: "font-semibold text-gray-200"
+  }, "Kidus Yohannes"), /*#__PURE__*/React.createElement("p", {
+    className: "text-xs text-[#00ffea]/80 mt-1"
+  }, "Connect on Facebook")), /*#__PURE__*/React.createElement("a", {
+    href: "https://wa.me/251984065814?text=Hello%20Kidus%2C%20I%20saw%20your%20portfolio!",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bg-[#0f172a]/70 border border-[#00ffea]/20 rounded-2xl p-6 text-center card-glow transition-all hover:border-[#00ffea] hover:bg-[#00ffea]/10 group"
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "fab fa-whatsapp text-4xl text-[#00ffea] mb-3 group-hover:scale-110 transition-transform"
+  }), /*#__PURE__*/React.createElement("p", {
+    className: "font-semibold text-gray-200"
+  }, "WhatsApp"), /*#__PURE__*/React.createElement("p", {
+    className: "text-sm text-gray-300"
+  }, "+251 984 065 814"), /*#__PURE__*/React.createElement("p", {
+    className: "text-xs text-[#00ffea]/70 mt-1"
+  }, "Tap to chat"))), /*#__PURE__*/React.createElement("div", {
+    className: "text-center mt-12 text-gray-500 text-sm border-t border-[#00ffea]/10 pt-8"
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "fas fa-comment-dots text-[#00ffea]/60 mr-2"
+  }), " Available for freelance, collaboration & trading discussions")));
+};
+var Footer = function Footer() {
+  return /*#__PURE__*/React.createElement("footer", {
+    className: "py-10 border-t border-[#00ffea]/10 text-center text-gray-500"
+  }, /*#__PURE__*/React.createElement("p", null, " \xA9 2026 Kidus Yohannes - Addis Ababa, Ethiopia | Portfolio"), /*#__PURE__*/React.createElement("div", {
+    className: "flex justify-center gap-6 mt-4 text-xl"
+  }, /*#__PURE__*/React.createElement("a", {
+    href: "https://github.com/kidayon/EST-Shuttle",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "hover:text-[#00ffea] transition"
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "fab fa-github"
+  })), /*#__PURE__*/React.createElement("a", {
+    href: "https://www.instagram.com/leonk8da?igsh=MXdtbzZna25kdmp4eQ==",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "hover:text-[#00ffea] transition"
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "fab fa-instagram"
+  })), /*#__PURE__*/React.createElement("a", {
+    href: "https://www.facebook.com/share/1E782ZbLQC/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "hover:text-[#00ffea] transition"
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "fab fa-facebook"
+  })), /*#__PURE__*/React.createElement("a", {
+    href: "https://wa.me/251984065814",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "hover:text-[#00ffea] transition"
+  }, /*#__PURE__*/React.createElement("i", {
+    className: "fab fa-whatsapp"
+  }))));
+};
+var App = function App() {
+  var _useState = useState(false),
+    _useState2 = _slicedToArray(_useState, 2),
+    scrolled = _useState2[0],
+    setScrolled = _useState2[1];
+  useEffect(function () {
+    var handleScroll = function handleScroll() {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return function () {
+      return window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  useEffect(function () {
+    var navbar = document.querySelector('nav');
+    if (navbar) {
+      if (scrolled) {
+        navbar.classList.add('bg-[#0a0f1c]/95', 'shadow-2xl');
+        navbar.classList.remove('bg-[#0a0f1c]/80');
+      } else {
+        navbar.classList.add('bg-[#0a0f1c]/80');
+        navbar.classList.remove('bg-[#0a0f1c]/95');
+      }
+    }
+  }, [scrolled]);
+  return /*#__PURE__*/React.createElement("div", {
+    className: "overflow-x-hidden"
+  }, /*#__PURE__*/React.createElement(Navbar, null), /*#__PURE__*/React.createElement(Hero, null), /*#__PURE__*/React.createElement(About, null), /*#__PURE__*/React.createElement(Skills, null), /*#__PURE__*/React.createElement(Projects, null), /*#__PURE__*/React.createElement(ForexSection, null), /*#__PURE__*/React.createElement(ArtSection, null), /*#__PURE__*/React.createElement(Contact, null), /*#__PURE__*/React.createElement(Footer, null));
+};
+ReactDOM.createRoot(document.getElementById('root')).render(/*#__PURE__*/React.createElement(App, null));
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfUmVhY3QiLCJSZWFjdCIsInVzZVN0YXRlIiwidXNlRWZmZWN0IiwiTmF2YmFyIiwic2Nyb2xsVG9TZWN0aW9uIiwiaWQiLCJlbGVtZW50IiwiZG9jdW1lbnQiLCJnZXRFbGVtZW50QnlJZCIsInNjcm9sbEludG9WaWV3IiwiYmVoYXZpb3IiLCJibG9jayIsImNyZWF0ZUVsZW1lbnQiLCJjbGFzc05hbWUiLCJtYXAiLCJpdGVtIiwic2VjdGlvbklkIiwidG9Mb3dlckNhc2UiLCJrZXkiLCJvbkNsaWNrIiwiaHJlZiIsInRhcmdldCIsInJlbCIsIkhlcm8iLCJzcmMiLCJhbHQiLCJvbkVycm9yIiwiZSIsIkFib3V0IiwiU2tpbGxzIiwic2tpbGxMaXN0Iiwic2tpbGwiLCJpZHgiLCJQcm9qZWN0cyIsIkZvcmV4U2VjdGlvbiIsIkFydFNlY3Rpb24iLCJDb250YWN0IiwiRm9vdGVyIiwiQXBwIiwiX3VzZVN0YXRlIiwiX3VzZVN0YXRlMiIsIl9zbGljZWRUb0FycmF5Iiwic2Nyb2xsZWQiLCJzZXRTY3JvbGxlZCIsImhhbmRsZVNjcm9sbCIsIndpbmRvdyIsInNjcm9sbFkiLCJhZGRFdmVudExpc3RlbmVyIiwicmVtb3ZlRXZlbnRMaXN0ZW5lciIsIm5hdmJhciIsInF1ZXJ5U2VsZWN0b3IiLCJjbGFzc0xpc3QiLCJhZGQiLCJyZW1vdmUiLCJSZWFjdERPTSIsImNyZWF0ZVJvb3QiLCJyZW5kZXIiXSwic291cmNlcyI6WyJJbmxpbmUgQmFiZWwgc2NyaXB0Il0sInNvdXJjZXNDb250ZW50IjpbIlxuICBjb25zdCB7IHVzZVN0YXRlLCB1c2VFZmZlY3QgfSA9IFJlYWN0O1xuICBcbiAgY29uc3QgTmF2YmFyID0gKCkgPT4ge1xuICAgIGNvbnN0IHNjcm9sbFRvU2VjdGlvbiA9IChpZCkgPT4ge1xuICAgICAgY29uc3QgZWxlbWVudCA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKGlkKTtcbiAgICAgIGlmIChlbGVtZW50KSB7XG4gICAgICAgIGVsZW1lbnQuc2Nyb2xsSW50b1ZpZXcoeyBiZWhhdmlvcjogJ3Ntb290aCcsIGJsb2NrOiAnc3RhcnQnIH0pO1xuICAgICAgfVxuICAgIH07XG5cbiAgICByZXR1cm4gKFxuICAgICAgPG5hdiBjbGFzc05hbWU9XCJmaXhlZCB0b3AtMCBsZWZ0LTAgdy1mdWxsIHotNTAgYmctWyMwYTBmMWNdLzgwIGJhY2tkcm9wLWJsdXIteGwgYm9yZGVyLWIgYm9yZGVyLVsjMDBmZmVhXS8yMCBzaGFkb3ctbGcgdHJhbnNpdGlvbi1hbGwgZHVyYXRpb24tMzAwXCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibWF4LXctN3hsIG14LWF1dG8gcHgtNiBweS0zIGZsZXggZmxleC13cmFwIGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW5cIj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInRleHQtMnhsIGZvbnQtYm9sZCB0cmFja2luZy10aWdodFwiPlxuICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwidGV4dC1bIzAwZmZlYV1cIj5LPC9zcGFuPmlkdXNcbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXggZmxleC13cmFwIGdhcC01IG1kOmdhcC03IHRleHQtc20gbWQ6dGV4dC1iYXNlIGZvbnQtbWVkaXVtXCI+XG4gICAgICAgICAgICB7WydIb21lJywgJ0Fib3V0JywgJ1Byb2plY3RzJywgJ1NraWxscycsICdDb250YWN0J10ubWFwKChpdGVtKSA9PiB7XG4gICAgICAgICAgICAgIGNvbnN0IHNlY3Rpb25JZCA9IGl0ZW0udG9Mb3dlckNhc2UoKTtcbiAgICAgICAgICAgICAgcmV0dXJuIChcbiAgICAgICAgICAgICAgICA8YnV0dG9uXG4gICAgICAgICAgICAgICAgICBrZXk9e2l0ZW19XG4gICAgICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBzY3JvbGxUb1NlY3Rpb24oc2VjdGlvbklkKX1cbiAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT1cIm5hdi1saW5rIHRleHQtZ3JheS0yMDAgaG92ZXI6dGV4dC1bIzAwZmZlYV0gdHJhbnNpdGlvbiBweC0xIHB5LTFcIlxuICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgIHtpdGVtfVxuICAgICAgICAgICAgICAgIDwvYnV0dG9uPlxuICAgICAgICAgICAgICApO1xuICAgICAgICAgICAgfSl9XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJoaWRkZW4gbWQ6YmxvY2tcIj5cbiAgICAgICAgICAgIDxhIGhyZWY9XCJodHRwczovL2dpdGh1Yi5jb20va2lkYXlvbi9FU1QtU2h1dHRsZVwiIHRhcmdldD1cIl9ibGFua1wiIHJlbD1cIm5vb3BlbmVyIG5vcmVmZXJyZXJcIiBjbGFzc05hbWU9XCJ0ZXh0LXNtIGJvcmRlciBib3JkZXItWyMwMGZmZWFdLzQwIHB4LTQgcHktMS41IHJvdW5kZWQtZnVsbCBob3ZlcjpiZy1bIzAwZmZlYV0vMTAgaG92ZXI6Ym9yZGVyLVsjMDBmZmVhXSB0cmFuc2l0aW9uXCI+XG4gICAgICAgICAgICAgIDxpIGNsYXNzTmFtZT1cImZhYiBmYS1naXRodWIgbXItMVwiPjwvaT4gR2l0SHViXG4gICAgICAgICAgICA8L2E+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9uYXY+XG4gICAgKTtcbiAgfTtcblxuICBjb25zdCBIZXJvID0gKCkgPT4ge1xuICAgIHJldHVybiAoXG4gICAgICA8c2VjdGlvbiBpZD1cImhvbWVcIiBjbGFzc05hbWU9XCJtaW4taC1zY3JlZW4gZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgcmVsYXRpdmUgaGVyby1iZyBwdC0yNCBwYi0xNlwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1heC13LTV4bCBteC1hdXRvIHB4LTYgdGV4dC1jZW50ZXJcIj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1iLTYgZmxleCBqdXN0aWZ5LWNlbnRlclwiPlxuICAgICAgICAgICAgPGltZyBcbiAgICAgICAgICAgICAgc3JjPVwia2lkdXNzLmpwZ1wiXG4gICAgICAgICAgICAgIGFsdD1cIktpZHVzIFlvaGFubmVzIC0gV2ViIERldmVsb3BlciBhbmQgRm9yZXggVHJhZGVyXCIgXG4gICAgICAgICAgICAgIGNsYXNzTmFtZT1cInctNDQgaC00NCBtZDp3LTUyIG1kOmgtNTIgcm91bmRlZC1mdWxsIG9iamVjdC1jb3ZlciBib3JkZXItNCBib3JkZXItWyMwMGZmZWFdIHByb2ZpbGUtYm9yZGVyXCJcbiAgICAgICAgICAgICAgb25FcnJvcj17KGUpID0+IHsgZS50YXJnZXQuc3JjID0gJ2h0dHBzOi8vcGxhY2Vob2xkLmNvLzQwMHg0MDAvMWUyOTNiLzAwZmZlYT90ZXh0PUtpZHVzJzsgfX1cbiAgICAgICAgICAgIC8+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPGgxIGNsYXNzTmFtZT1cImZvbnQtWydQbGF5ZmFpcl9EaXNwbGF5J10gdGV4dC01eGwgbWQ6dGV4dC03eGwgZm9udC1leHRyYWJvbGQgdHJhY2tpbmctdGlnaHQgYmctZ3JhZGllbnQtdG8tciBmcm9tLXdoaXRlIHZpYS1bI2IwZjNmZl0gdG8tWyMwMGZmZWFdIGJnLWNsaXAtdGV4dCB0ZXh0LXRyYW5zcGFyZW50IGRyb3Atc2hhZG93LWxnXCI+XG4gICAgICAgICAgICBJJ20gS2lkdXMgXG4gICAgICAgICAgPC9oMT5cbiAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LXhsIG1kOnRleHQtMnhsIGZvbnQtc2VtaWJvbGQgdGV4dC1bIzAwZmZlYV0gbXQtNCBnbG93LXRleHRcIj5cbiAgICAgICAgICAgIFdlYiBEZXZlbG9wZXIvVUkgLSBGb3JleCBUcmFkZXIgLSBEZXNpZ25lclxuICAgICAgICAgIDwvcD5cbiAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LWdyYXktMzAwIHRleHQtbGcgbXQtMiBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBnYXAtMlwiPlxuICAgICAgICAgICAgPGkgY2xhc3NOYW1lPVwiZmFzIGZhLW1hcC1tYXJrZXItYWx0IHRleHQtWyMwMGZmZWFdXCI+PC9pPiBBZGRpcyBBYmFiYSwgRXRoaW9waWFcbiAgICAgICAgICA8L3A+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGZsZXgtd3JhcCBqdXN0aWZ5LWNlbnRlciBnYXAtNSBtdC0xMFwiPlxuICAgICAgICAgICAgPGJ1dHRvbiBvbkNsaWNrPXsoKSA9PiBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgncHJvamVjdHMnKS5zY3JvbGxJbnRvVmlldyh7IGJlaGF2aW9yOiAnc21vb3RoJyB9KX0gY2xhc3NOYW1lPVwiYnRuLXByaW1hcnkgYmctWyMwMGZmZWFdIHRleHQtWyMwYTBmMWNdIGZvbnQtYm9sZCBweC04IHB5LTMgcm91bmRlZC1mdWxsIHNoYWRvdy14bCBob3ZlcjpzaGFkb3ctWyMwMGZmZWFdLzQwIHRyYW5zaXRpb25cIj5cbiAgICAgICAgICAgICAgRXhwbG9yZSBNeSBXb3JrXG4gICAgICAgICAgICA8L2J1dHRvbj5cbiAgICAgICAgICAgIDxhIGhyZWY9XCJodHRwczovL2dpdGh1Yi5jb20va2lkYXlvbi9FU1QtU2h1dHRsZVwiIHRhcmdldD1cIl9ibGFua1wiIGNsYXNzTmFtZT1cImJnLVsjMWUyOTNiXSBib3JkZXIgYm9yZGVyLVsjMDBmZmVhXS80MCB0ZXh0LVsjMDBmZmVhXSBmb250LWJvbGQgcHgtOCBweS0zIHJvdW5kZWQtZnVsbCBob3ZlcjpiZy1bIzAwZmZlYV0vMTAgaG92ZXI6Ym9yZGVyLVsjMDBmZmVhXSB0cmFuc2l0aW9uIHNoYWRvdy1tZFwiPlxuICAgICAgICAgICAgICA8aSBjbGFzc05hbWU9XCJmYWIgZmEtZ2l0aHViIG1yLTJcIj48L2k+IEdpdEh1YiBSZXBvc2l0b3J5XG4gICAgICAgICAgICA8L2E+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9zZWN0aW9uPlxuICAgICk7XG4gIH07XG5cbiAgY29uc3QgQWJvdXQgPSAoKSA9PiB7XG4gICAgcmV0dXJuIChcbiAgICAgIDxzZWN0aW9uIGlkPVwiYWJvdXRcIiBjbGFzc05hbWU9XCJweS0yNCBweC02IGJnLVsjMGYxNzJhXS80MFwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1heC13LTV4bCBteC1hdXRvIHRleHQtY2VudGVyXCI+XG4gICAgICAgICAgPGgyIGNsYXNzTmFtZT1cImZvbnQtWydQbGF5ZmFpcl9EaXNwbGF5J10gdGV4dC00eGwgbWQ6dGV4dC01eGwgZm9udC1ib2xkIHRleHQtWyNiYWU2ZmRdIG1iLTEyXCI+QWJvdXQgTWU8L2gyPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwic3BhY2UteS02IHRleHQtZ3JheS0zMDAgdGV4dC1sZyBtYXgtdy0zeGwgbXgtYXV0b1wiPlxuICAgICAgICAgICAgPHA+SSdtIGEgY3JlYXRpdmUgYW5kIGFuYWx5dGljYWwgbWluZCBmcm9tIEFkZGlzIEFiYWJhLiBNeSBqb3VybmV5IGludG8gdGVjaG5vbG9neSBiZWdhbiB3aXRoIGEgZmFzY2luYXRpb24gZm9yIGhvdyB0aGluZ3Mgd29yayBiZWhpbmQgdGhlIHNjcmVlbiB0aG91Z2ggSSBidWlsZCBhIG1vZGVybiByZXNwb25zaXZlIHdlYnNpdGVzIHdoaWxlIGRlZXBseSBlbmdhZ2luZyB3aXRoIHRoZSBmaW5hbmNpYWwgbWFya2V0cyBhcyBhIGZvcmV4IHRyYWRlci48L3A+XG4gICAgICAgICAgICA8cD5UcmFkaW5nIGhhcyB0YXVnaHQgbWUgZGlzY2lwbGluZSBhbmQgcmlzayBtYW5hZ2VtZW50IHRocm91Z2ggbXkgZXhwZXJpZW5jZXMgb2YgZGF0YSBkcml2ZW4gZGVjaXNpb24gc2tpbGxzIHRoYXQgYnJpbmcgaW50byBldmVyeSBwcm9qZWN0IGkgZGV2ZWxvcC48L3A+XG4gICAgICAgICAgICA8cD5PbiB0aGUgY3JlYXRpdmUgc2lkZSBJIGV4cHJlc3MgbXlzZWxmIHRocm91Z2ggZHJhd2luZyBhbmQgcGFpbnRpbmcuIEFydCBoZWxwcyBtZSBzdGF5IHBhdGllbnQgYW5kIGNyZWF0aXZlIGZvciBkZXNpZ25pbmcgY29tcG9zaXRpb25zIGFuZCB2aXN1YWwgaGFybW9ueSB3aXRoIHF1YWxpdGllcyB0aGF0IGRpcmVjdGx5IGltcHJvdmUgbXkgd29yayBhcyBhIHdlYiBkZXZlbG9wZXIgYW5kIGRlc2lnbmVyLjwvcD5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L3NlY3Rpb24+XG4gICAgKTtcbiAgfTtcblxuICBjb25zdCBTa2lsbHMgPSAoKSA9PiB7XG4gICAgY29uc3Qgc2tpbGxMaXN0ID0gW1xuICAgICAgXCJXZWIgRGV2ZWxvcG1lbnQgKEhUTUw1LCBDU1MzLCBKYXZhU2NyaXB0KVwiLCBcIlJlc3BvbnNpdmUgRGVzaWduICYgVUkvVVhcIiwgXCJGb3JleCBNYXJrZXQgQW5hbHlzaXNcIixcbiAgICAgIFwiUmlzayBNYW5hZ2VtZW50XCIsIFwiVGVjaG5pY2FsICYgRnVuZGFtZW50YWwgQW5hbHlzaXNcIiwgXCJEcmF3aW5nICYgRGlnaXRhbCBBcnRcIixcbiAgICAgIFwiVmlzdWFsIERlc2lnbiAmIENvbXBvc2l0aW9uXCIsIFwiQW5hbHl0aWNhbCBUaGlua2luZyAmIERpc2NpcGxpbmVcIlxuICAgIF07XG4gICAgcmV0dXJuIChcbiAgICAgIDxzZWN0aW9uIGlkPVwic2tpbGxzXCIgY2xhc3NOYW1lPVwicHktMjQgcHgtNiBiZy1bIzBhMGYxY11cIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtYXgtdy02eGwgbXgtYXV0b1wiPlxuICAgICAgICAgIDxoMiBjbGFzc05hbWU9XCJmb250LVsnUGxheWZhaXJfRGlzcGxheSddIHRleHQtNHhsIG1kOnRleHQtNXhsIGZvbnQtYm9sZCB0ZXh0LWNlbnRlciB0ZXh0LVsjYmFlNmZkXSBtYi0xMlwiPiBUZWNobmljYWwgc2tpbGxzPC9oMj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXggZmxleC13cmFwIGp1c3RpZnktY2VudGVyIGdhcC00XCI+XG4gICAgICAgICAgICB7c2tpbGxMaXN0Lm1hcCgoc2tpbGwsIGlkeCkgPT4gKFxuICAgICAgICAgICAgICA8c3BhbiBrZXk9e2lkeH0gY2xhc3NOYW1lPVwic2tpbGwtYmFkZ2UgYmctWyMwMGZmZWFdLzEwIGJvcmRlciBib3JkZXItWyMwMGZmZWFdLzQwIHRleHQtWyM2N2U4ZjldIHB4LTYgcHktMi41IHJvdW5kZWQtZnVsbCBmb250LXNlbWlib2xkIHRleHQtbWQgYmFja2Ryb3AtYmx1ci1zbSBjdXJzb3ItZGVmYXVsdCB0cmFuc2l0aW9uLWFsbCBkdXJhdGlvbi0zMDBcIj5cbiAgICAgICAgICAgICAgICB7c2tpbGx9XG4gICAgICAgICAgICAgIDwvc3Bhbj5cbiAgICAgICAgICAgICkpfVxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvc2VjdGlvbj5cbiAgICApO1xuICB9O1xuXG4gIGNvbnN0IFByb2plY3RzID0gKCkgPT4ge1xuICAgIHJldHVybiAoXG4gICAgICA8c2VjdGlvbiBpZD1cInByb2plY3RzXCIgY2xhc3NOYW1lPVwicHktMjQgcHgtNiBiZy1bIzBmMTcyYV0vNjBcIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtYXgtdy02eGwgbXgtYXV0b1wiPlxuICAgICAgICAgIDxoMiBjbGFzc05hbWU9XCJmb250LVsnUGxheWZhaXJfRGlzcGxheSddIHRleHQtNHhsIG1kOnRleHQtNXhsIGZvbnQtYm9sZCB0ZXh0LWNlbnRlciB0ZXh0LVsjYmFlNmZkXSBtYi0xMlwiPkZlYXR1cmVkIFByb2plY3Q8L2gyPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibWF4LXctM3hsIG14LWF1dG8gYmctWyMwZjE3MmFdLzgwIGJhY2tkcm9wLWJsdXItbWQgYm9yZGVyIGJvcmRlci1bIzAwZmZlYV0vMjAgcm91bmRlZC0zeGwgcC04IG1kOnAtMTAgY2FyZC1nbG93IHRyYW5zaXRpb24tYWxsIGR1cmF0aW9uLTUwMFwiPlxuICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT1cInRleHQtMnhsIG1kOnRleHQtM3hsIGZvbnQtYm9sZCB0ZXh0LVsjNjdlOGY5XSBtYi00XCI+RVNUIFNodXR0bGUsIEFpcnBvcnQgJiBDcnVpc2UgVHJhbnNmZXIgUGxhdGZvcm08L2gzPlxuICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwidGV4dC1ncmF5LTMwMCB0ZXh0LWxnIG1iLTRcIj5JdCdzIGZ1bGx5IHJlc3BvbnNpdmUgd2ViIHBsYXRmb3JtIGRlc2lnbmVkIHRvIHNpbXBsaWZ5IGFpcnBvcnQgYW5kIGNydWlzZSBwb3J0IHRyYW5zZmVycy4gVGhlIGZyb250ZW5kIGlzIGxpdmUgYW5kIEknbSBjdXJyZW50bHkgaW1wbGVtZW50aW5nIGJvb2tpbmcgbG9naWNzIHJlYWwgdGltZSBkYXRhIHRyYWNraW5nIGFuZCBwYXltZW50IGZlYXR1cmVzLjwvcD5cbiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtWyM5NGEzYjhdIG1iLTZcIj48c3Ryb25nIGNsYXNzTmFtZT1cInRleHQtWyMwMGZmZWFdXCI+VGVjaCBTdGFjazo8L3N0cm9uZz4gSFRNTDUsIENTUzMsIEphdmFTY3JpcHQgKEVTNikgLSBIb3N0ZWQgb24gVmVyY2VsPC9wPlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGZsZXgtd3JhcCBnYXAtNFwiPlxuICAgICAgICAgICAgICA8YSBocmVmPVwiaHR0cHM6Ly9lLXNodXR0bGUudmVyY2VsLmFwcC9pbmRleC5odG1sXCIgdGFyZ2V0PVwiX2JsYW5rXCIgY2xhc3NOYW1lPVwiYnRuLXByaW1hcnkgYmctWyMwMGZmZWFdIHRleHQtWyMwYTBmMWNdIGZvbnQtYm9sZCBweC02IHB5LTIuNSByb3VuZGVkLWZ1bGwgc2hhZG93LW1kIGhvdmVyOnNoYWRvdy1bIzAwZmZlYV0vNDAgdHJhbnNpdGlvbiBpbmxpbmUtZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTJcIj5cbiAgICAgICAgICAgICAgICA8aSBjbGFzc05hbWU9XCJmYXMgZmEtZXh0ZXJuYWwtbGluay1hbHRcIj48L2k+IExpdmUgRGVtb1xuICAgICAgICAgICAgICA8L2E+XG4gICAgICAgICAgICAgIDxhIGhyZWY9XCJodHRwczovL2dpdGh1Yi5jb20va2lkYXlvbi9FU1QtU2h1dHRsZVwiIHRhcmdldD1cIl9ibGFua1wiIGNsYXNzTmFtZT1cImJnLXRyYW5zcGFyZW50IGJvcmRlciBib3JkZXItWyMwMGZmZWFdLzUwIHRleHQtWyMwMGZmZWFdIGZvbnQtYm9sZCBweC02IHB5LTIuNSByb3VuZGVkLWZ1bGwgaG92ZXI6YmctWyMwMGZmZWFdLzEwIHRyYW5zaXRpb24gaW5saW5lLWZsZXggaXRlbXMtY2VudGVyIGdhcC0yXCI+XG4gICAgICAgICAgICAgICAgPGkgY2xhc3NOYW1lPVwiZmFiIGZhLWdpdGh1YlwiPjwvaT4gR2l0SHViXG4gICAgICAgICAgICAgIDwvYT5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvc2VjdGlvbj5cbiAgICApO1xuICB9O1xuXG4gIGNvbnN0IEZvcmV4U2VjdGlvbiA9ICgpID0+IHtcbiAgICByZXR1cm4gKFxuICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPVwicHktMjQgcHgtNiBiZy1bIzBhMGYxY11cIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtYXgtdy01eGwgbXgtYXV0b1wiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYmctWyMwZjE3MmFdLzcwIGJhY2tkcm9wLWJsdXItc20gYm9yZGVyIGJvcmRlci1bIzAwZmZlYV0vMjAgcm91bmRlZC0zeGwgcC04IG1kOnAtMTAgY2FyZC1nbG93IHRyYW5zaXRpb24tYWxsIGR1cmF0aW9uLTUwMCB0ZXh0LWNlbnRlclwiPlxuICAgICAgICAgICAgPGkgY2xhc3NOYW1lPVwiZmFzIGZhLWNoYXJ0LWxpbmUgdGV4dC01eGwgdGV4dC1bIzAwZmZlYV0gbWItNVwiPjwvaT5cbiAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9XCJ0ZXh0LTN4bCBmb250LWJvbGQgdGV4dC1bIzY3ZThmOV0gbWItNFwiPkZvcmV4IFRyYWRpbmc8L2gzPlxuICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwidGV4dC1ncmF5LTMwMCB0ZXh0LWxnIGxlYWRpbmctcmVsYXhlZCBtYXgtdy0zeGwgbXgtYXV0b1wiPlxuICAgICAgICAgICAgICBJIGFwcHJvYWNoIEZvcmV4IHRyYWRpbmcgd2l0aCBwYXRpZW5jZSBhbmQgcHJlY2lzaW9uLiBVbmRlcnN0YW5kaW5nIG1hcmtldCBzdHJ1Y3R1cmVzLCByZWFkaW5nIHByaWNlIGFjdGlvbnMscmlzayBtYW5hZ2VtZW50IGFuZCB0cnkgbm90IHRvIGxldCBlbW90aW9ucyB0YWtlIG92ZXIgSXQncyBub3QgYWx3YXlzIGVhc3kgYnV0IGl0IHRlYWNoZXMgbWUgZGlzY2lwbGluZSBhbmQgdGhhdCBoZWxwcyBtZSBhcyBhIGRldmVsb3BlciB0b28uXG4gICAgICAgICAgICA8L3A+XG4gICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LVsjYmFlNmZkXSBmb250LXNlbWlib2xkIG10LTUgdGV4dC14bFwiPiBUaGlzIGFuYWx5dGljYWwgZm91bmRhdGlvbiBkcml2ZXMgbXkgcGFzc2lvbiBmb3IgRGF0YSBTY2llbmNlLjwvcD5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L3NlY3Rpb24+XG4gICAgKTtcbiAgfTtcblxuICBjb25zdCBBcnRTZWN0aW9uID0gKCkgPT4ge1xuICAgIHJldHVybiAoXG4gICAgICA8c2VjdGlvbiBjbGFzc05hbWU9XCJweS0yNCBweC02IGJnLVsjMGYxNzJhXS80MFwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1heC13LTV4bCBteC1hdXRvXCI+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJiZy1bIzBhMGYxY10vNzAgYmFja2Ryb3AtYmx1ci1zbSBib3JkZXIgYm9yZGVyLVsjMDBmZmVhXS8yMCByb3VuZGVkLTN4bCBwLTggbWQ6cC0xMCBjYXJkLWdsb3cgdHJhbnNpdGlvbi1hbGwgZHVyYXRpb24tNTAwIHRleHQtY2VudGVyXCI+XG4gICAgICAgICAgICA8aSBjbGFzc05hbWU9XCJmYXMgZmEtcGFpbnQtYnJ1c2ggdGV4dC01eGwgdGV4dC1bIzAwZmZlYV0gbWItNVwiPjwvaT5cbiAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9XCJ0ZXh0LTN4bCBmb250LWJvbGQgdGV4dC1bIzY3ZThmOV0gbWItNFwiPkFydCAmIERlc2lnbjwvaDM+XG4gICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LWdyYXktMzAwIHRleHQtbGcgbGVhZGluZy1yZWxheGVkXCI+XG4gICAgICAgICAgICAgIERyYXdpbmcgYW5kIHBhaW50aW5nIGFyZSBlc3NlbnRpYWwgcGFydHMgb2Ygd2hvIEkgYW0uIEl0IGhlbHBzIG1lIHRvIHN0YXkgY3JlYXRpdmUgYW5kIGltcHJvdmUgbXkgc2Vuc2Ugb2YgYWVzdGhldGljcyAgXG4gICAgICAgICAgICAgIGFuZCBkZXZlbG9wIG15IGlkZWFzIHdpdGggY29sb3JzIGFuZCBjb21wb3NpdGlvbi4gVGhlc2UgYXJ0aXN0aWMgc2tpbGxzIGRpcmVjdGx5IGVuaGFuY2UgbXkgd2ViIGRlc2lnbiB3b3JrIGlzXG4gICAgICAgICAgICAgIGhlbHBpbmcgbWUgdG8gY3JhZnQgdmlzdWFsbHkgYXBwZWFsaW5nIGFuZCB1c2VyIGZyaWVuZGx5IGludGVyZmFjZXMuXG4gICAgICAgICAgICA8L3A+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9zZWN0aW9uPlxuICAgICk7XG4gIH07XG5cbiAgY29uc3QgQ29udGFjdCA9ICgpID0+IHtcbiAgICByZXR1cm4gKFxuICAgICAgPHNlY3Rpb24gaWQ9XCJjb250YWN0XCIgY2xhc3NOYW1lPVwicHktMjQgcHgtNiBiZy1bIzBhMGYxY11cIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtYXgtdy02eGwgbXgtYXV0b1wiPlxuICAgICAgICAgIDxoMiBjbGFzc05hbWU9XCJmb250LVsnUGxheWZhaXJfRGlzcGxheSddIHRleHQtNHhsIG1kOnRleHQtNXhsIGZvbnQtYm9sZCB0ZXh0LWNlbnRlciB0ZXh0LVsjYmFlNmZkXSBtYi04XCI+R2V0IGluIHRvdWNoPC9oMj5cbiAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LWNlbnRlciB0ZXh0LWdyYXktNDAwIHRleHQtbGcgbWF4LXctMnhsIG14LWF1dG8gbWItMTRcIj5cbiAgICAgICAgICAgIEZlZWwgZnJlZSB0byByZWFjaCBvdXQgZm9yIGNvbGxhYm9yYXRpb25zIG9yIHRyYWRpbmcgaW5zaWdodHMgYW5kIGNyZWF0aXZlIHByb2plY3RzIEknZCBsb3ZlIHRvIGNvbm5lY3QhXG4gICAgICAgICAgPC9wPlxuICAgICAgICBcbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImdyaWQgZ3JpZC1jb2xzLTEgc206Z3JpZC1jb2xzLTIgbGc6Z3JpZC1jb2xzLTMgeGw6Z3JpZC1jb2xzLTQgZ2FwLThcIj5cbiAgICAgICAgICAgIFxuICAgICAgICAgICAgPGEgaHJlZj1cIm1haWx0bzpreGRhd3JsZDI0QGdtYWlsLmNvbVwiIGNsYXNzTmFtZT1cImJnLVsjMGYxNzJhXS83MCBib3JkZXIgYm9yZGVyLVsjMDBmZmVhXS8yMCByb3VuZGVkLTJ4bCBwLTYgdGV4dC1jZW50ZXIgY2FyZC1nbG93IHRyYW5zaXRpb24tYWxsIGNvbnRhY3QtbGluay1jYXJkIGhvdmVyOmJvcmRlci1bIzAwZmZlYV0gZ3JvdXBcIj5cbiAgICAgICAgICAgICAgPGkgY2xhc3NOYW1lPVwiZmFzIGZhLWVudmVsb3BlIHRleHQtNHhsIHRleHQtWyMwMGZmZWFdIG1iLTMgZ3JvdXAtaG92ZXI6c2NhbGUtMTA1IHRyYW5zaXRpb24tdHJhbnNmb3JtXCI+PC9pPlxuICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJmb250LW1lZGl1bSB0ZXh0LWdyYXktMjAwIGJyZWFrLWFsbFwiPmt4ZGF3cmxkMjRAZ21haWwuY29tPC9wPlxuICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LXhzIHRleHQtWyMwMGZmZWFdLzcwIG10LTJcIj5TZW5kIGFuIGVtYWlsPC9wPlxuICAgICAgICAgICAgPC9hPlxuICAgICAgICAgICAgXG4gICAgICAgICAgICA8YSBocmVmPVwidGVsOisyNTE5ODQwNjU4MTRcIiBjbGFzc05hbWU9XCJiZy1bIzBmMTcyYV0vNzAgYm9yZGVyIGJvcmRlci1bIzAwZmZlYV0vMjAgcm91bmRlZC0yeGwgcC02IHRleHQtY2VudGVyIGNhcmQtZ2xvdyB0cmFuc2l0aW9uLWFsbCBjb250YWN0LWxpbmstY2FyZCBob3Zlcjpib3JkZXItWyMwMGZmZWFdIGdyb3VwXCI+XG4gICAgICAgICAgICAgIDxpIGNsYXNzTmFtZT1cImZhcyBmYS1waG9uZS1hbHQgdGV4dC00eGwgdGV4dC1bIzAwZmZlYV0gbWItMyBncm91cC1ob3ZlcjpzY2FsZS0xMDUgdHJhbnNpdGlvbi10cmFuc2Zvcm1cIj48L2k+XG4gICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cImZvbnQtbWVkaXVtIHRleHQtZ3JheS0yMDBcIj4rMjUxIDk4NCAwNjUgODE0PC9wPlxuICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LXhzIHRleHQtWyMwMGZmZWFdLzcwIG10LTJcIj5DYWxsIG9yIG1lc3NhZ2U8L3A+XG4gICAgICAgICAgICA8L2E+XG4gICAgICAgICAgICBcbiAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJiZy1bIzBmMTcyYV0vNzAgYm9yZGVyIGJvcmRlci1bIzAwZmZlYV0vMjAgcm91bmRlZC0yeGwgcC02IHRleHQtY2VudGVyIGNhcmQtZ2xvdyB0cmFuc2l0aW9uLWFsbFwiPlxuICAgICAgICAgICAgICA8aSBjbGFzc05hbWU9XCJmYXMgZmEtbWFwLW1hcmtlci1hbHQgdGV4dC00eGwgdGV4dC1bIzAwZmZlYV0gbWItM1wiPjwvaT5cbiAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwiZm9udC1tZWRpdW0gdGV4dC1ncmF5LTIwMFwiPkFkZGlzIEFiYWJhLCBFdGhpb3BpYTwvcD5cbiAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwidGV4dC14cyB0ZXh0LWdyYXktNDAwIG10LTJcIj5CYXNlZCBpbiBBZGRpczwvcD5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgXG4gICAgICAgICAgICAgPGEgaHJlZj1cImh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vbGVvbms4ZGE/aWdzaD1NWGR0YnpabmEyNWtkbXA0ZVE9PVwiIHRhcmdldD1cIl9ibGFua1wiIHJlbD1cIm5vb3BlbmVyIG5vcmVmZXJyZXJcIiBjbGFzc05hbWU9XCJiZy1bIzBmMTcyYV0vNzAgYm9yZGVyIGJvcmRlci1bIzAwZmZlYV0vMjAgcm91bmRlZC0yeGwgcC02IHRleHQtY2VudGVyIGNhcmQtZ2xvdyB0cmFuc2l0aW9uLWFsbCBob3Zlcjpib3JkZXItWyMwMGZmZWFdIGhvdmVyOmJnLVsjMDBmZmVhXS8xMCBncm91cFwiPlxuICAgICAgICAgICAgICA8aSBjbGFzc05hbWU9XCJmYWIgZmEtaW5zdGFncmFtIHRleHQtNHhsIHRleHQtWyMwMGZmZWFdIG1iLTMgZ3JvdXAtaG92ZXI6c2NhbGUtMTEwIHRyYW5zaXRpb24tdHJhbnNmb3JtXCI+PC9pPlxuICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJmb250LXNlbWlib2xkIHRleHQtZ3JheS0yMDBcIj5AbGVvbms4ZGE8L3A+XG4gICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQteHMgdGV4dC1ncmF5LTQwMCBtdC0xXCI+Rm9sbG93IG9uIEluc3RhZ3JhbTwvcD5cbiAgICAgICAgICAgIDwvYT5cbiAgICAgICAgICAgIFxuICAgICAgICAgICAgPGEgaHJlZj1cImh0dHBzOi8vd3d3LmZhY2Vib29rLmNvbS9zaGFyZS8xRTc4MlpiTFFDL1wiIHRhcmdldD1cIl9ibGFua1wiIHJlbD1cIm5vb3BlbmVyIG5vcmVmZXJyZXJcIiBjbGFzc05hbWU9XCJiZy1bIzBmMTcyYV0vNzAgYm9yZGVyIGJvcmRlci1bIzAwZmZlYV0vMjAgcm91bmRlZC0yeGwgcC02IHRleHQtY2VudGVyIGNhcmQtZ2xvdyB0cmFuc2l0aW9uLWFsbCBob3Zlcjpib3JkZXItWyMwMGZmZWFdIGhvdmVyOmJnLVsjMDBmZmVhXS8xMCBncm91cFwiPlxuICAgICAgICAgICAgICA8aSBjbGFzc05hbWU9XCJmYWIgZmEtZmFjZWJvb2sgdGV4dC00eGwgdGV4dC1bIzAwZmZlYV0gbWItMyBncm91cC1ob3ZlcjpzY2FsZS0xMTAgdHJhbnNpdGlvbi10cmFuc2Zvcm1cIj48L2k+XG4gICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cImZvbnQtc2VtaWJvbGQgdGV4dC1ncmF5LTIwMFwiPktpZHVzIFlvaGFubmVzPC9wPlxuICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LXhzIHRleHQtWyMwMGZmZWFdLzgwIG10LTFcIj5Db25uZWN0IG9uIEZhY2Vib29rPC9wPlxuICAgICAgICAgICAgPC9hPlxuICAgICAgICAgICAgXG4gICAgICAgICAgPGEgaHJlZj1cImh0dHBzOi8vd2EubWUvMjUxOTg0MDY1ODE0P3RleHQ9SGVsbG8lMjBLaWR1cyUyQyUyMEklMjBzYXclMjB5b3VyJTIwcG9ydGZvbGlvIVwiIHRhcmdldD1cIl9ibGFua1wiIHJlbD1cIm5vb3BlbmVyIG5vcmVmZXJyZXJcIiBjbGFzc05hbWU9XCJiZy1bIzBmMTcyYV0vNzAgYm9yZGVyIGJvcmRlci1bIzAwZmZlYV0vMjAgcm91bmRlZC0yeGwgcC02IHRleHQtY2VudGVyIGNhcmQtZ2xvdyB0cmFuc2l0aW9uLWFsbCBob3Zlcjpib3JkZXItWyMwMGZmZWFdIGhvdmVyOmJnLVsjMDBmZmVhXS8xMCBncm91cFwiPlxuICAgICAgICAgICAgICA8aSBjbGFzc05hbWU9XCJmYWIgZmEtd2hhdHNhcHAgdGV4dC00eGwgdGV4dC1bIzAwZmZlYV0gbWItMyBncm91cC1ob3ZlcjpzY2FsZS0xMTAgdHJhbnNpdGlvbi10cmFuc2Zvcm1cIj48L2k+XG4gICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cImZvbnQtc2VtaWJvbGQgdGV4dC1ncmF5LTIwMFwiPldoYXRzQXBwPC9wPlxuICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LXNtIHRleHQtZ3JheS0zMDBcIj4rMjUxIDk4NCAwNjUgODE0PC9wPlxuICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LXhzIHRleHQtWyMwMGZmZWFdLzcwIG10LTFcIj5UYXAgdG8gY2hhdDwvcD5cbiAgICAgICAgICAgIDwvYT5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgXG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJ0ZXh0LWNlbnRlciBtdC0xMiB0ZXh0LWdyYXktNTAwIHRleHQtc20gYm9yZGVyLXQgYm9yZGVyLVsjMDBmZmVhXS8xMCBwdC04XCI+XG4gICAgICAgICAgICA8aSBjbGFzc05hbWU9XCJmYXMgZmEtY29tbWVudC1kb3RzIHRleHQtWyMwMGZmZWFdLzYwIG1yLTJcIj48L2k+IEF2YWlsYWJsZSBmb3IgZnJlZWxhbmNlLCBjb2xsYWJvcmF0aW9uICYgdHJhZGluZyBkaXNjdXNzaW9uc1xuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvc2VjdGlvbj5cbiAgICApO1xuICB9O1xuXG4gIGNvbnN0IEZvb3RlciA9ICgpID0+IHtcbiAgICByZXR1cm4gKFxuICAgICAgPGZvb3RlciBjbGFzc05hbWU9XCJweS0xMCBib3JkZXItdCBib3JkZXItWyMwMGZmZWFdLzEwIHRleHQtY2VudGVyIHRleHQtZ3JheS01MDBcIj5cbiAgICAgICAgPHA+ICZjb3B5OyAyMDI2IEtpZHVzIFlvaGFubmVzIC0gQWRkaXMgQWJhYmEsIEV0aGlvcGlhIHwgUG9ydGZvbGlvPC9wPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXgganVzdGlmeS1jZW50ZXIgZ2FwLTYgbXQtNCB0ZXh0LXhsXCI+XG4gICAgICAgICAgPGEgaHJlZj1cImh0dHBzOi8vZ2l0aHViLmNvbS9raWRheW9uL0VTVC1TaHV0dGxlXCIgdGFyZ2V0PVwiX2JsYW5rXCIgcmVsPVwibm9vcGVuZXIgbm9yZWZlcnJlclwiIGNsYXNzTmFtZT1cImhvdmVyOnRleHQtWyMwMGZmZWFdIHRyYW5zaXRpb25cIj48aSBjbGFzc05hbWU9XCJmYWIgZmEtZ2l0aHViXCI+PC9pPjwvYT5cbiAgICAgICAgICA8YSBocmVmPVwiaHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9sZW9uazhkYT9pZ3NoPU1YZHRielpuYTI1a2RtcDRlUT09XCIgdGFyZ2V0PVwiX2JsYW5rXCIgcmVsPVwibm9vcGVuZXIgbm9yZWZlcnJlclwiIGNsYXNzTmFtZT1cImhvdmVyOnRleHQtWyMwMGZmZWFdIHRyYW5zaXRpb25cIj48aSBjbGFzc05hbWU9XCJmYWIgZmEtaW5zdGFncmFtXCI+PC9pPjwvYT5cbiAgICAgICAgICA8YSBocmVmPVwiaHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL3NoYXJlLzFFNzgyWmJMUUMvXCIgdGFyZ2V0PVwiX2JsYW5rXCIgcmVsPVwibm9vcGVuZXIgbm9yZWZlcnJlclwiIGNsYXNzTmFtZT1cImhvdmVyOnRleHQtWyMwMGZmZWFdIHRyYW5zaXRpb25cIj48aSBjbGFzc05hbWU9XCJmYWIgZmEtZmFjZWJvb2tcIj48L2k+PC9hPlxuICAgICAgICAgIDxhIGhyZWY9XCJodHRwczovL3dhLm1lLzI1MTk4NDA2NTgxNFwiIHRhcmdldD1cIl9ibGFua1wiIHJlbD1cIm5vb3BlbmVyIG5vcmVmZXJyZXJcIiBjbGFzc05hbWU9XCJob3Zlcjp0ZXh0LVsjMDBmZmVhXSB0cmFuc2l0aW9uXCI+PGkgY2xhc3NOYW1lPVwiZmFiIGZhLXdoYXRzYXBwXCI+PC9pPjwvYT5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Zvb3Rlcj5cbiAgICApO1xuICB9O1xuXG4gIGNvbnN0IEFwcCA9ICgpID0+IHtcbiAgICBjb25zdCBbc2Nyb2xsZWQsIHNldFNjcm9sbGVkXSA9IHVzZVN0YXRlKGZhbHNlKTtcbiAgICB1c2VFZmZlY3QoKCkgPT4ge1xuICAgICAgY29uc3QgaGFuZGxlU2Nyb2xsID0gKCkgPT4ge1xuICAgICAgICBzZXRTY3JvbGxlZCh3aW5kb3cuc2Nyb2xsWSA+IDIwKTtcbiAgICAgIH07XG4gICAgICB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcignc2Nyb2xsJywgaGFuZGxlU2Nyb2xsKTtcbiAgICAgIHJldHVybiAoKSA9PiB3aW5kb3cucmVtb3ZlRXZlbnRMaXN0ZW5lcignc2Nyb2xsJywgaGFuZGxlU2Nyb2xsKTtcbiAgICB9LCBbXSk7XG4gICAgXG4gICAgdXNlRWZmZWN0KCgpID0+IHtcbiAgICAgIGNvbnN0IG5hdmJhciA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJ25hdicpO1xuICAgICAgaWYgKG5hdmJhcikge1xuICAgICAgICBpZiAoc2Nyb2xsZWQpIHtcbiAgICAgICAgICBuYXZiYXIuY2xhc3NMaXN0LmFkZCgnYmctWyMwYTBmMWNdLzk1JywgJ3NoYWRvdy0yeGwnKTtcbiAgICAgICAgICBuYXZiYXIuY2xhc3NMaXN0LnJlbW92ZSgnYmctWyMwYTBmMWNdLzgwJyk7XG4gICAgICAgIH0gZWxzZSB7XG4gICAgICAgICAgbmF2YmFyLmNsYXNzTGlzdC5hZGQoJ2JnLVsjMGEwZjFjXS84MCcpO1xuICAgICAgICAgIG5hdmJhci5jbGFzc0xpc3QucmVtb3ZlKCdiZy1bIzBhMGYxY10vOTUnKTtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH0sIFtzY3JvbGxlZF0pO1xuXG4gICAgcmV0dXJuIChcbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwib3ZlcmZsb3cteC1oaWRkZW5cIj5cbiAgICAgICAgPE5hdmJhciAvPlxuICAgICAgICA8SGVybyAvPlxuICAgICAgICA8QWJvdXQgLz5cbiAgICAgICAgPFNraWxscyAvPlxuICAgICAgICA8UHJvamVjdHMgLz5cbiAgICAgICAgPEZvcmV4U2VjdGlvbiAvPlxuICAgICAgICA8QXJ0U2VjdGlvbiAvPlxuICAgICAgICA8Q29udGFjdCAvPlxuICAgICAgICA8Rm9vdGVyIC8+XG4gICAgICA8L2Rpdj5cbiAgICApO1xuICB9O1xuXG4gIFJlYWN0RE9NLmNyZWF0ZVJvb3QoZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3Jvb3QnKSkucmVuZGVyKDxBcHAgLz4pO1xuIl0sIm1hcHBpbmdzIjoiOzs7Ozs7OztBQUNFLElBQUFBLE1BQUEsR0FBZ0NDLEtBQUs7RUFBN0JDLFFBQVEsR0FBQUYsTUFBQSxDQUFSRSxRQUFRO0VBQUVDLFNBQVMsR0FBQUgsTUFBQSxDQUFURyxTQUFTO0FBRTNCLElBQU1DLE1BQU0sR0FBRyxTQUFUQSxNQUFNQSxDQUFBLEVBQVM7RUFDbkIsSUFBTUMsZUFBZSxHQUFHLFNBQWxCQSxlQUFlQSxDQUFJQyxFQUFFLEVBQUs7SUFDOUIsSUFBTUMsT0FBTyxHQUFHQyxRQUFRLENBQUNDLGNBQWMsQ0FBQ0gsRUFBRSxDQUFDO0lBQzNDLElBQUlDLE9BQU8sRUFBRTtNQUNYQSxPQUFPLENBQUNHLGNBQWMsQ0FBQztRQUFFQyxRQUFRLEVBQUUsUUFBUTtRQUFFQyxLQUFLLEVBQUU7TUFBUSxDQUFDLENBQUM7SUFDaEU7RUFDRixDQUFDO0VBRUQsb0JBQ0VYLEtBQUEsQ0FBQVksYUFBQTtJQUFLQyxTQUFTLEVBQUM7RUFBb0ksZ0JBQ2pKYixLQUFBLENBQUFZLGFBQUE7SUFBS0MsU0FBUyxFQUFDO0VBQXlFLGdCQUN0RmIsS0FBQSxDQUFBWSxhQUFBO0lBQUtDLFNBQVMsRUFBQztFQUFtQyxnQkFDaERiLEtBQUEsQ0FBQVksYUFBQTtJQUFNQyxTQUFTLEVBQUM7RUFBZ0IsR0FBQyxHQUFPLENBQUMsUUFDdEMsQ0FBQyxlQUNOYixLQUFBLENBQUFZLGFBQUE7SUFBS0MsU0FBUyxFQUFDO0VBQWdFLEdBQzVFLENBQUMsTUFBTSxFQUFFLE9BQU8sRUFBRSxVQUFVLEVBQUUsUUFBUSxFQUFFLFNBQVMsQ0FBQyxDQUFDQyxHQUFHLENBQUMsVUFBQ0MsSUFBSSxFQUFLO0lBQ2hFLElBQU1DLFNBQVMsR0FBR0QsSUFBSSxDQUFDRSxXQUFXLENBQUMsQ0FBQztJQUNwQyxvQkFDRWpCLEtBQUEsQ0FBQVksYUFBQTtNQUNFTSxHQUFHLEVB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</script></head>
+<body class="bg-[#0a0f1c] text-gray-200">
+
+<div id="root"><div class="overflow-x-hidden"><nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-xl border-b border-[#00ffea]/20 shadow-lg transition-all duration-300 bg-[#0a0f1c]/95 shadow-2xl"><div class="max-w-7xl mx-auto px-6 py-3 flex flex-wrap items-center justify-between"><div class="text-2xl font-bold tracking-tight"><span class="text-[#00ffea]">K</span>idus</div><div class="flex flex-wrap gap-5 md:gap-7 text-sm md:text-base font-medium"><button class="nav-link text-gray-200 hover:text-[#00ffea] transition px-1 py-1">Home</button><button class="nav-link text-gray-200 hover:text-[#00ffea] transition px-1 py-1">About</button><button class="nav-link text-gray-200 hover:text-[#00ffea] transition px-1 py-1">Projects</button><button class="nav-link text-gray-200 hover:text-[#00ffea] transition px-1 py-1">Skills</button><button class="nav-link text-gray-200 hover:text-[#00ffea] transition px-1 py-1">Contact</button></div><div class="hidden md:block"><a href="https://github.com/kidayon/EST-Shuttle" target="_blank" rel="noopener noreferrer" class="text-sm border border-[#00ffea]/40 px-4 py-1.5 rounded-full hover:bg-[#00ffea]/10 hover:border-[#00ffea] transition"><i class="fab fa-github mr-1"></i> GitHub</a></div></div></nav><section id="home" class="min-h-screen flex items-center justify-center relative hero-bg pt-24 pb-16"><div class="max-w-5xl mx-auto px-6 text-center"><div class="mb-6 flex justify-center"><img src="./Kidus Yohannes Portfolio_files/kiduss.jpg" alt="Kidus Yohannes - Web Developer and Forex Trader" class="w-44 h-44 md:w-52 md:h-52 rounded-full object-cover border-4 border-[#00ffea] profile-border"></div><h1 class="font-[&#39;Playfair_Display&#39;] text-5xl md:text-7xl font-extrabold tracking-tight bg-gradient-to-r from-white via-[#b0f3ff] to-[#00ffea] bg-clip-text text-transparent drop-shadow-lg">I'm Kidus</h1><p class="text-xl md:text-2xl font-semibold text-[#00ffea] mt-4 glow-text">Web Developer/UI - Forex Trader - Designer</p><p class="text-gray-300 text-lg mt-2 flex items-center justify-center gap-2"><i class="fas fa-map-marker-alt text-[#00ffea]"></i> Addis Ababa, Ethiopia</p><div class="flex flex-wrap justify-center gap-5 mt-10"><button class="btn-primary bg-[#00ffea] text-[#0a0f1c] font-bold px-8 py-3 rounded-full shadow-xl hover:shadow-[#00ffea]/40 transition">Explore My Work</button><a href="https://github.com/kidayon/EST-Shuttle" target="_blank" class="bg-[#1e293b] border border-[#00ffea]/40 text-[#00ffea] font-bold px-8 py-3 rounded-full hover:bg-[#00ffea]/10 hover:border-[#00ffea] transition shadow-md"><i class="fab fa-github mr-2"></i> GitHub Repository</a></div></div></section><section id="about" class="py-24 px-6 bg-[#0f172a]/40"><div class="max-w-5xl mx-auto text-center"><h2 class="font-[&#39;Playfair_Display&#39;] text-4xl md:text-5xl font-bold text-[#bae6fd] mb-12">About Me</h2><div class="space-y-6 text-gray-300 text-lg max-w-3xl mx-auto"><p>I'm a creative and analytical mind from Addis Ababa. My journey into technology began with a fascination for how things work behind the screen though I build a modern responsive websites while deeply engaging with the financial markets as a forex trader.</p><p>Trading has taught me discipline and risk management through my experiences of data driven decision skills that bring into every project i develop.</p><p>On the creative side I express myself through drawing and painting. Art helps me stay patient and creative for designing compositions and visual harmony with qualities that directly improve my work as a web developer and designer.</p></div></div></section><section id="skills" class="py-24 px-6 bg-[#0a0f1c]"><div class="max-w-6xl mx-auto"><h2 class="font-[&#39;Playfair_Display&#39;] text-4xl md:text-5xl font-bold text-center text-[#bae6fd] mb-12"> Technical skills</h2><div class="flex flex-wrap justify-center gap-4"><span class="skill-badge bg-[#00ffea]/10 border border-[#00ffea]/40 text-[#67e8f9] px-6 py-2.5 rounded-full font-semibold text-md backdrop-blur-sm cursor-default transition-all duration-300">Web Development (HTML5, CSS3, JavaScript)</span><span class="skill-badge bg-[#00ffea]/10 border border-[#00ffea]/40 text-[#67e8f9] px-6 py-2.5 rounded-full font-semibold text-md backdrop-blur-sm cursor-default transition-all duration-300">Responsive Design &amp; UI/UX</span><span class="skill-badge bg-[#00ffea]/10 border border-[#00ffea]/40 text-[#67e8f9] px-6 py-2.5 rounded-full font-semibold text-md backdrop-blur-sm cursor-default transition-all duration-300">Forex Market Analysis</span><span class="skill-badge bg-[#00ffea]/10 border border-[#00ffea]/40 text-[#67e8f9] px-6 py-2.5 rounded-full font-semibold text-md backdrop-blur-sm cursor-default transition-all duration-300">Risk Management</span><span class="skill-badge bg-[#00ffea]/10 border border-[#00ffea]/40 text-[#67e8f9] px-6 py-2.5 rounded-full font-semibold text-md backdrop-blur-sm cursor-default transition-all duration-300">Technical &amp; Fundamental Analysis</span><span class="skill-badge bg-[#00ffea]/10 border border-[#00ffea]/40 text-[#67e8f9] px-6 py-2.5 rounded-full font-semibold text-md backdrop-blur-sm cursor-default transition-all duration-300">Drawing &amp; Digital Art</span><span class="skill-badge bg-[#00ffea]/10 border border-[#00ffea]/40 text-[#67e8f9] px-6 py-2.5 rounded-full font-semibold text-md backdrop-blur-sm cursor-default transition-all duration-300">Visual Design &amp; Composition</span><span class="skill-badge bg-[#00ffea]/10 border border-[#00ffea]/40 text-[#67e8f9] px-6 py-2.5 rounded-full font-semibold text-md backdrop-blur-sm cursor-default transition-all duration-300">Analytical Thinking &amp; Discipline</span></div></div></section><section id="projects" class="py-24 px-6 bg-[#0f172a]/60"><div class="max-w-6xl mx-auto"><h2 class="font-[&#39;Playfair_Display&#39;] text-4xl md:text-5xl font-bold text-center text-[#bae6fd] mb-12">Featured Project</h2><div class="max-w-3xl mx-auto bg-[#0f172a]/80 backdrop-blur-md border border-[#00ffea]/20 rounded-3xl p-8 md:p-10 card-glow transition-all duration-500"><h3 class="text-2xl md:text-3xl font-bold text-[#67e8f9] mb-4">EST Shuttle, Airport &amp; Cruise Transfer Platform</h3><p class="text-gray-300 text-lg mb-4">It's fully responsive web platform designed to simplify airport and cruise port transfers. The frontend is live and I'm currently implementing booking logics real time data tracking and payment features.</p><p class="text-[#94a3b8] mb-6"><strong class="text-[#00ffea]">Tech Stack:</strong> HTML5, CSS3, JavaScript (ES6) - Hosted on Vercel</p><div class="flex flex-wrap gap-4"><a href="https://e-shuttle.vercel.app/index.html" target="_blank" class="btn-primary bg-[#00ffea] text-[#0a0f1c] font-bold px-6 py-2.5 rounded-full shadow-md hover:shadow-[#00ffea]/40 transition inline-flex items-center gap-2"><i class="fas fa-external-link-alt"></i> Live Demo</a><a href="https://github.com/kidayon/EST-Shuttle" target="_blank" class="bg-transparent border border-[#00ffea]/50 text-[#00ffea] font-bold px-6 py-2.5 rounded-full hover:bg-[#00ffea]/10 transition inline-flex items-center gap-2"><i class="fab fa-github"></i> GitHub</a></div></div></div></section><section class="py-24 px-6 bg-[#0a0f1c]"><div class="max-w-5xl mx-auto"><div class="bg-[#0f172a]/70 backdrop-blur-sm border border-[#00ffea]/20 rounded-3xl p-8 md:p-10 card-glow transition-all duration-500 text-center"><i class="fas fa-chart-line text-5xl text-[#00ffea] mb-5"></i><h3 class="text-3xl font-bold text-[#67e8f9] mb-4">Forex Trading</h3><p class="text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto">I approach Forex trading with patience and precision. Understanding market structures, reading price actions,risk management and try not to let emotions take over It's not always easy but it teaches me discipline and that helps me as a developer too.</p><p class="text-[#bae6fd] font-semibold mt-5 text-xl"> This analytical foundation drives my passion for Data Science.</p></div></div></section><section class="py-24 px-6 bg-[#0f172a]/40"><div class="max-w-5xl mx-auto"><div class="bg-[#0a0f1c]/70 backdrop-blur-sm border border-[#00ffea]/20 rounded-3xl p-8 md:p-10 card-glow transition-all duration-500 text-center"><i class="fas fa-paint-brush text-5xl text-[#00ffea] mb-5"></i><h3 class="text-3xl font-bold text-[#67e8f9] mb-4">Art &amp; Design</h3><p class="text-gray-300 text-lg leading-relaxed">Drawing and painting are essential parts of who I am. It helps me to stay creative and improve my sense of aesthetics and develop my ideas with colors and composition. These artistic skills directly enhance my web design work is helping me to craft visually appealing and user friendly interfaces.</p></div></div></section><section id="contact" class="py-24 px-6 bg-[#0a0f1c]"><div class="max-w-6xl mx-auto"><h2 class="font-[&#39;Playfair_Display&#39;] text-4xl md:text-5xl font-bold text-center text-[#bae6fd] mb-8">Get in touch</h2><p class="text-center text-gray-400 text-lg max-w-2xl mx-auto mb-14">Feel free to reach out for collaborations or trading insights and creative projects I'd love to connect!</p><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"><a href="mailto:kxdawrld24@gmail.com" class="bg-[#0f172a]/70 border border-[#00ffea]/20 rounded-2xl p-6 text-center card-glow transition-all contact-link-card hover:border-[#00ffea] group"><i class="fas fa-envelope text-4xl text-[#00ffea] mb-3 group-hover:scale-105 transition-transform"></i><p class="font-medium text-gray-200 break-all">kxdawrld24@gmail.com</p><p class="text-xs text-[#00ffea]/70 mt-2">Send an email</p></a><a href="tel:+251984065814" class="bg-[#0f172a]/70 border border-[#00ffea]/20 rounded-2xl p-6 text-center card-glow transition-all contact-link-card hover:border-[#00ffea] group"><i class="fas fa-phone-alt text-4xl text-[#00ffea] mb-3 group-hover:scale-105 transition-transform"></i><p class="font-medium text-gray-200">+251 984 065 814</p><p class="text-xs text-[#00ffea]/70 mt-2">Call or message</p></a><div class="bg-[#0f172a]/70 border border-[#00ffea]/20 rounded-2xl p-6 text-center card-glow transition-all"><i class="fas fa-map-marker-alt text-4xl text-[#00ffea] mb-3"></i><p class="font-medium text-gray-200">Addis Ababa, Ethiopia</p><p class="text-xs text-gray-400 mt-2">Based in Addis</p></div><a href="https://www.instagram.com/leonk8da?igsh=MXdtbzZna25kdmp4eQ==" target="_blank" rel="noopener noreferrer" class="bg-[#0f172a]/70 border border-[#00ffea]/20 rounded-2xl p-6 text-center card-glow transition-all hover:border-[#00ffea] hover:bg-[#00ffea]/10 group"><i class="fab fa-instagram text-4xl text-[#00ffea] mb-3 group-hover:scale-110 transition-transform"></i><p class="font-semibold text-gray-200">@leonk8da</p><p class="text-xs text-gray-400 mt-1">Follow on Instagram</p></a><a href="https://www.facebook.com/share/1E782ZbLQC/" target="_blank" rel="noopener noreferrer" class="bg-[#0f172a]/70 border border-[#00ffea]/20 rounded-2xl p-6 text-center card-glow transition-all hover:border-[#00ffea] hover:bg-[#00ffea]/10 group"><i class="fab fa-facebook text-4xl text-[#00ffea] mb-3 group-hover:scale-110 transition-transform"></i><p class="font-semibold text-gray-200">Kidus Yohannes</p><p class="text-xs text-[#00ffea]/80 mt-1">Connect on Facebook</p></a><a href="https://wa.me/251984065814?text=Hello%20Kidus%2C%20I%20saw%20your%20portfolio!" target="_blank" rel="noopener noreferrer" class="bg-[#0f172a]/70 border border-[#00ffea]/20 rounded-2xl p-6 text-center card-glow transition-all hover:border-[#00ffea] hover:bg-[#00ffea]/10 group"><i class="fab fa-whatsapp text-4xl text-[#00ffea] mb-3 group-hover:scale-110 transition-transform"></i><p class="font-semibold text-gray-200">WhatsApp</p><p class="text-sm text-gray-300">+251 984 065 814</p><p class="text-xs text-[#00ffea]/70 mt-1">Tap to chat</p></a></div><div class="text-center mt-12 text-gray-500 text-sm border-t border-[#00ffea]/10 pt-8"><i class="fas fa-comment-dots text-[#00ffea]/60 mr-2"></i> Available for freelance, collaboration &amp; trading discussions</div></div></section><footer class="py-10 border-t border-[#00ffea]/10 text-center text-gray-500"><p> © 2026 Kidus Yohannes - Addis Ababa, Ethiopia | Portfolio</p><div class="flex justify-center gap-6 mt-4 text-xl"><a href="https://github.com/kidayon/EST-Shuttle" target="_blank" rel="noopener noreferrer" class="hover:text-[#00ffea] transition"><i class="fab fa-github"></i></a><a href="https://www.instagram.com/leonk8da?igsh=MXdtbzZna25kdmp4eQ==" target="_blank" rel="noopener noreferrer" class="hover:text-[#00ffea] transition"><i class="fab fa-instagram"></i></a><a href="https://www.facebook.com/share/1E782ZbLQC/" target="_blank" rel="noopener noreferrer" class="hover:text-[#00ffea] transition"><i class="fab fa-facebook"></i></a><a href="https://wa.me/251984065814" target="_blank" rel="noopener noreferrer" class="hover:text-[#00ffea] transition"><i class="fab fa-whatsapp"></i></a></div></footer></div></div>
+
+<script type="text/babel">
+  const { useState, useEffect } = React;
+  
+  const Navbar = () => {
+    const scrollToSection = (id) => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    };
+
+    return (
+      <nav className="fixed top-0 left-0 w-full z-50 bg-[#0a0f1c]/80 backdrop-blur-xl border-b border-[#00ffea]/20 shadow-lg transition-all duration-300">
+        <div className="max-w-7xl mx-auto px-6 py-3 flex flex-wrap items-center justify-between">
+          <div className="text-2xl font-bold tracking-tight">
+            <span className="text-[#00ffea]">K</span>idus
+          </div>
+          <div className="flex flex-wrap gap-5 md:gap-7 text-sm md:text-base font-medium">
+            {['Home', 'About', 'Projects', 'Skills', 'Contact'].map((item) => {
+              const sectionId = item.toLowerCase();
+              return (
+                <button
+                  key={item}
+                  onClick={() => scrollToSection(sectionId)}
+                  className="nav-link text-gray-200 hover:text-[#00ffea] transition px-1 py-1"
+                >
+                  {item}
+                </button>
+              );
+            })}
+          </div>
+          <div className="hidden md:block">
+            <a href="https://github.com/kidayon/EST-Shuttle" target="_blank" rel="noopener noreferrer" className="text-sm border border-[#00ffea]/40 px-4 py-1.5 rounded-full hover:bg-[#00ffea]/10 hover:border-[#00ffea] transition">
+              <i className="fab fa-github mr-1"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </nav>
+    );
+  };
+
+  const Hero = () => {
+    return (
+      <section id="home" className="min-h-screen flex items-center justify-center relative hero-bg pt-24 pb-16">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <div className="mb-6 flex justify-center">
+            <img 
+              src="kiduss.jpg"
+              alt="Kidus Yohannes - Web Developer and Forex Trader" 
+              className="w-44 h-44 md:w-52 md:h-52 rounded-full object-cover border-4 border-[#00ffea] profile-border"
+              onError={(e) => { e.target.src = 'https://placehold.co/400x400/1e293b/00ffea?text=Kidus'; }}
+            />
+          </div>
+          <h1 className="font-['Playfair_Display'] text-5xl md:text-7xl font-extrabold tracking-tight bg-gradient-to-r from-white via-[#b0f3ff] to-[#00ffea] bg-clip-text text-transparent drop-shadow-lg">
+            I'm Kidus 
+          </h1>
+          <p className="text-xl md:text-2xl font-semibold text-[#00ffea] mt-4 glow-text">
+            Web Developer/UI - Forex Trader - Designer
+          </p>
+          <p className="text-gray-300 text-lg mt-2 flex items-center justify-center gap-2">
+            <i className="fas fa-map-marker-alt text-[#00ffea]"></i> Addis Ababa, Ethiopia
+          </p>
+          <div className="flex flex-wrap justify-center gap-5 mt-10">
+            <button onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })} className="btn-primary bg-[#00ffea] text-[#0a0f1c] font-bold px-8 py-3 rounded-full shadow-xl hover:shadow-[#00ffea]/40 transition">
+              Explore My Work
+            </button>
+            <a href="https://github.com/kidayon/EST-Shuttle" target="_blank" className="bg-[#1e293b] border border-[#00ffea]/40 text-[#00ffea] font-bold px-8 py-3 rounded-full hover:bg-[#00ffea]/10 hover:border-[#00ffea] transition shadow-md">
+              <i className="fab fa-github mr-2"></i> GitHub Repository
+            </a>
+          </div>
+        </div>
+      </section>
+    );
+  };
+
+  const About = () => {
+    return (
+      <section id="about" className="py-24 px-6 bg-[#0f172a]/40">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-[#bae6fd] mb-12">About Me</h2>
+          <div className="space-y-6 text-gray-300 text-lg max-w-3xl mx-auto">
+            <p>I'm a creative and analytical mind from Addis Ababa. My journey into technology began with a fascination for how things work behind the screen though I build a modern responsive websites while deeply engaging with the financial markets as a forex trader.</p>
+            <p>Trading has taught me discipline and risk management through my experiences of data driven decision skills that bring into every project i develop.</p>
+            <p>On the creative side I express myself through drawing and painting. Art helps me stay patient and creative for designing compositions and visual harmony with qualities that directly improve my work as a web developer and designer.</p>
+          </div>
+        </div>
+      </section>
+    );
+  };
+
+  const Skills = () => {
+    const skillList = [
+      "Web Development (HTML5, CSS3, JavaScript)", "Responsive Design & UI/UX", "Forex Market Analysis",
+      "Risk Management", "Technical & Fundamental Analysis", "Drawing & Digital Art",
+      "Visual Design & Composition", "Analytical Thinking & Discipline"
+    ];
+    return (
+      <section id="skills" className="py-24 px-6 bg-[#0a0f1c]">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-center text-[#bae6fd] mb-12"> Technical skills</h2>
+          <div className="flex flex-wrap justify-center gap-4">
+            {skillList.map((skill, idx) => (
+              <span key={idx} className="skill-badge bg-[#00ffea]/10 border border-[#00ffea]/40 text-[#67e8f9] px-6 py-2.5 rounded-full font-semibold text-md backdrop-blur-sm cursor-default transition-all duration-300">
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+    );
+  };
+
+  const Projects = () => {
+    return (
+      <section id="projects" className="py-24 px-6 bg-[#0f172a]/60">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-center text-[#bae6fd] mb-12">Featured Project</h2>
+          <div className="max-w-3xl mx-auto bg-[#0f172a]/80 backdrop-blur-md border border-[#00ffea]/20 rounded-3xl p-8 md:p-10 card-glow transition-all duration-500">
+            <h3 className="text-2xl md:text-3xl font-bold text-[#67e8f9] mb-4">EST Shuttle, Airport & Cruise Transfer Platform</h3>
+            <p className="text-gray-300 text-lg mb-4">It's fully responsive web platform designed to simplify airport and cruise port transfers. The frontend is live and I'm currently implementing booking logics real time data tracking and payment features.</p>
+            <p className="text-[#94a3b8] mb-6"><strong className="text-[#00ffea]">Tech Stack:</strong> HTML5, CSS3, JavaScript (ES6) - Hosted on Vercel</p>
+            <div className="flex flex-wrap gap-4">
+              <a href="https://e-shuttle.vercel.app/index.html" target="_blank" className="btn-primary bg-[#00ffea] text-[#0a0f1c] font-bold px-6 py-2.5 rounded-full shadow-md hover:shadow-[#00ffea]/40 transition inline-flex items-center gap-2">
+                <i className="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="https://github.com/kidayon/EST-Shuttle" target="_blank" className="bg-transparent border border-[#00ffea]/50 text-[#00ffea] font-bold px-6 py-2.5 rounded-full hover:bg-[#00ffea]/10 transition inline-flex items-center gap-2">
+                <i className="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  };
+
+  const ForexSection = () => {
+    return (
+      <section className="py-24 px-6 bg-[#0a0f1c]">
+        <div className="max-w-5xl mx-auto">
+          <div className="bg-[#0f172a]/70 backdrop-blur-sm border border-[#00ffea]/20 rounded-3xl p-8 md:p-10 card-glow transition-all duration-500 text-center">
+            <i className="fas fa-chart-line text-5xl text-[#00ffea] mb-5"></i>
+            <h3 className="text-3xl font-bold text-[#67e8f9] mb-4">Forex Trading</h3>
+            <p className="text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto">
+              I approach Forex trading with patience and precision. Understanding market structures, reading price actions,risk management and try not to let emotions take over It's not always easy but it teaches me discipline and that helps me as a developer too.
+            </p>
+            <p className="text-[#bae6fd] font-semibold mt-5 text-xl"> This analytical foundation drives my passion for Data Science.</p>
+          </div>
+        </div>
+      </section>
+    );
+  };
+
+  const ArtSection = () => {
+    return (
+      <section className="py-24 px-6 bg-[#0f172a]/40">
+        <div className="max-w-5xl mx-auto">
+          <div className="bg-[#0a0f1c]/70 backdrop-blur-sm border border-[#00ffea]/20 rounded-3xl p-8 md:p-10 card-glow transition-all duration-500 text-center">
+            <i className="fas fa-paint-brush text-5xl text-[#00ffea] mb-5"></i>
+            <h3 className="text-3xl font-bold text-[#67e8f9] mb-4">Art & Design</h3>
+            <p className="text-gray-300 text-lg leading-relaxed">
+              Drawing and painting are essential parts of who I am. It helps me to stay creative and improve my sense of aesthetics  
+              and develop my ideas with colors and composition. These artistic skills directly enhance my web design work is
+              helping me to craft visually appealing and user friendly interfaces.
+            </p>
+          </div>
+        </div>
+      </section>
+    );
+  };
+
+  const Contact = () => {
+    return (
+      <section id="contact" className="py-24 px-6 bg-[#0a0f1c]">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-center text-[#bae6fd] mb-8">Get in touch</h2>
+          <p className="text-center text-gray-400 text-lg max-w-2xl mx-auto mb-14">
+            Feel free to reach out for collaborations or trading insights and creative projects I'd love to connect!
+          </p>
+        
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            
+            <a href="mailto:kxdawrld24@gmail.com" className="bg-[#0f172a]/70 border border-[#00ffea]/20 rounded-2xl p-6 text-center card-glow transition-all contact-link-card hover:border-[#00ffea] group">
+              <i className="fas fa-envelope text-4xl text-[#00ffea] mb-3 group-hover:scale-105 transition-transform"></i>
+              <p className="font-medium text-gray-200 break-all">kxdawrld24@gmail.com</p>
+              <p className="text-xs text-[#00ffea]/70 mt-2">Send an email</p>
+            </a>
+            
+            <a href="tel:+251984065814" className="bg-[#0f172a]/70 border border-[#00ffea]/20 rounded-2xl p-6 text-center card-glow transition-all contact-link-card hover:border-[#00ffea] group">
+              <i className="fas fa-phone-alt text-4xl text-[#00ffea] mb-3 group-hover:scale-105 transition-transform"></i>
+              <p className="font-medium text-gray-200">+251 984 065 814</p>
+              <p className="text-xs text-[#00ffea]/70 mt-2">Call or message</p>
+            </a>
+            
+           <div className="bg-[#0f172a]/70 border border-[#00ffea]/20 rounded-2xl p-6 text-center card-glow transition-all">
+              <i className="fas fa-map-marker-alt text-4xl text-[#00ffea] mb-3"></i>
+              <p className="font-medium text-gray-200">Addis Ababa, Ethiopia</p>
+              <p className="text-xs text-gray-400 mt-2">Based in Addis</p>
+            </div>
+            
+             <a href="https://www.instagram.com/leonk8da?igsh=MXdtbzZna25kdmp4eQ==" target="_blank" rel="noopener noreferrer" className="bg-[#0f172a]/70 border border-[#00ffea]/20 rounded-2xl p-6 text-center card-glow transition-all hover:border-[#00ffea] hover:bg-[#00ffea]/10 group">
+              <i className="fab fa-instagram text-4xl text-[#00ffea] mb-3 group-hover:scale-110 transition-transform"></i>
+              <p className="font-semibold text-gray-200">@leonk8da</p>
+              <p className="text-xs text-gray-400 mt-1">Follow on Instagram</p>
+            </a>
+            
+            <a href="https://www.facebook.com/share/1E782ZbLQC/" target="_blank" rel="noopener noreferrer" className="bg-[#0f172a]/70 border border-[#00ffea]/20 rounded-2xl p-6 text-center card-glow transition-all hover:border-[#00ffea] hover:bg-[#00ffea]/10 group">
+              <i className="fab fa-facebook text-4xl text-[#00ffea] mb-3 group-hover:scale-110 transition-transform"></i>
+              <p className="font-semibold text-gray-200">Kidus Yohannes</p>
+              <p className="text-xs text-[#00ffea]/80 mt-1">Connect on Facebook</p>
+            </a>
+            
+          <a href="https://wa.me/251984065814?text=Hello%20Kidus%2C%20I%20saw%20your%20portfolio!" target="_blank" rel="noopener noreferrer" className="bg-[#0f172a]/70 border border-[#00ffea]/20 rounded-2xl p-6 text-center card-glow transition-all hover:border-[#00ffea] hover:bg-[#00ffea]/10 group">
+              <i className="fab fa-whatsapp text-4xl text-[#00ffea] mb-3 group-hover:scale-110 transition-transform"></i>
+              <p className="font-semibold text-gray-200">WhatsApp</p>
+              <p className="text-sm text-gray-300">+251 984 065 814</p>
+              <p className="text-xs text-[#00ffea]/70 mt-1">Tap to chat</p>
+            </a>
+          </div>
+        
+          <div className="text-center mt-12 text-gray-500 text-sm border-t border-[#00ffea]/10 pt-8">
+            <i className="fas fa-comment-dots text-[#00ffea]/60 mr-2"></i> Available for freelance, collaboration & trading discussions
+          </div>
+        </div>
+      </section>
+    );
+  };
+
+  const Footer = () => {
+    return (
+      <footer className="py-10 border-t border-[#00ffea]/10 text-center text-gray-500">
+        <p> &copy; 2026 Kidus Yohannes - Addis Ababa, Ethiopia | Portfolio</p>
+        <div className="flex justify-center gap-6 mt-4 text-xl">
+          <a href="https://github.com/kidayon/EST-Shuttle" target="_blank" rel="noopener noreferrer" className="hover:text-[#00ffea] transition"><i className="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/leonk8da?igsh=MXdtbzZna25kdmp4eQ==" target="_blank" rel="noopener noreferrer" className="hover:text-[#00ffea] transition"><i className="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/1E782ZbLQC/" target="_blank" rel="noopener noreferrer" className="hover:text-[#00ffea] transition"><i className="fab fa-facebook"></i></a>
+          <a href="https://wa.me/251984065814" target="_blank" rel="noopener noreferrer" className="hover:text-[#00ffea] transition"><i className="fab fa-whatsapp"></i></a>
+        </div>
+      </footer>
+    );
+  };
+
+  const App = () => {
+    const [scrolled, setScrolled] = useState(false);
+    useEffect(() => {
+      const handleScroll = () => {
+        setScrolled(window.scrollY > 20);
+      };
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+    
+    useEffect(() => {
+      const navbar = document.querySelector('nav');
+      if (navbar) {
+        if (scrolled) {
+          navbar.classList.add('bg-[#0a0f1c]/95', 'shadow-2xl');
+          navbar.classList.remove('bg-[#0a0f1c]/80');
+        } else {
+          navbar.classList.add('bg-[#0a0f1c]/80');
+          navbar.classList.remove('bg-[#0a0f1c]/95');
+        }
+      }
+    }, [scrolled]);
+
+    return (
+      <div className="overflow-x-hidden">
+        <Navbar />
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <ForexSection />
+        <ArtSection />
+        <Contact />
+        <Footer />
+      </div>
+    );
+  };
+
+  ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+
+</body></html>
